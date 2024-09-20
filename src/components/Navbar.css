@@ -1,0 +1,136 @@
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 1.25rem; /* Adjust padding */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 50;
+}
+
+.logo {
+  width: 80px; /* Logo size */
+  height: auto;
+  margin-right: 1rem; /* Adjust spacing */
+}
+
+.flex {
+  display: flex;
+}
+
+.space-x-6 > :not(:last-child) {
+  margin-right: 1.5rem; /* Space between items */
+}
+
+.nav-link {
+  font-size: 1rem; /* Adjusted font size for balance */
+  font-weight: 600; /* Increased font weight for better visibility */
+  color: #333; /* Darker color for contrast */
+  transition: color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.nav-link:hover {
+  color: #0E74A4; /* Hover color */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.dropdown {
+  display: none; /* Initially hide dropdown */
+  position: absolute; /* Position dropdown */
+  top: 100%; /* Position below the nav item */
+  left: 0; /* Align with the nav item */
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+  border-radius: 0.5rem; /* Rounded corners */
+  z-index: 100; /* Ensure dropdown is above other elements */
+}
+.aboutdropdown {
+    display: none; /* Initially hide dropdown */
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav item */
+    left: 0; /* Align with the nav item */
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    border-radius: 0.5rem; /* Rounded corners */
+    z-index: 100; /* Ensure dropdown is above other elements */
+  }
+  
+.relative:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+.relative:hover .aboutdropdown {
+    display: block; /* Show dropdown on hover */
+  }
+
+
+.dropdown-link {
+  display: block; /* Make links block elements */
+  padding: 0.5rem 1rem; /* Padding for dropdown links */
+  color: #333; /* Match link color */
+  text-decoration: none; /* No underline */
+  transition: background-color 0.3s; /* Transition for background */
+}
+
+.dropdown-link:hover {
+  background-color: #f0f0f0; /* Hover background for dropdown */
+}
+
+/* Additional styles for improved usability */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0.75rem; /* Smaller padding on mobile */
+  }
+
+  .space-x-6 > :not(:last-child) {
+    margin-right: 1rem; /* Reduce spacing on mobile */
+  }
+
+  .nav-link {
+    font-size: 0.9rem; /* Smaller font size on mobile */
+  }
+}
+.dropdown {
+    display: none; /* Initially hide dropdown */
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav item */
+    left: 50%; /* Center align the dropdown */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    background-color: #0E74A4; /* Dropdown background color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    border-radius: 0.5rem; /* Rounded corners */
+    z-index: 100; /* Ensure dropdown is above other elements */
+    white-space: wrap; /* Prevent text wrapping */
+}
+.aboutdropdown
+{
+    display: none; /* Initially hide dropdown */
+    position: absolute; /* Position dropdown */
+    top: 100%; /* Position below the nav item */
+    left: 50%; /* Center align the dropdown */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    background-color: #0E74A4; /* Dropdown background color */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    border-radius: 0.5rem; /* Rounded corners */
+    z-index: 100; /* Ensure dropdown is above other elements */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+.relative:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-link {
+    display: block; /* Make links block elements */
+    padding: 0.5rem 1rem; /* Padding for dropdown links */
+    color: white; /* Dropdown text color */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Transition for background */
+}
+
+.dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighter hover effect */
+}
+.navbar {
+    margin-bottom: 0; /* Remove bottom margin */
+}

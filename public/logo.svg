@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 209">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .4em;
+      }
+
+      .cls-2 {
+        letter-spacing: .4em;
+      }
+
+      .cls-3 {
+        letter-spacing: .41em;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #1b3855;
+      }
+
+      .cls-4, .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-8 {
+        letter-spacing: .4em;
+      }
+
+      .cls-5 {
+        font-family: AcuminConcept-Light, 'Acumin Variable Concept';
+        font-size: 13.73px;
+        font-variation-settings: 'wght' 300, 'wdth' 100, 'slnt' 0;
+        font-weight: 300;
+      }
+
+      .cls-9 {
+        letter-spacing: .4em;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-10 {
+        letter-spacing: .4em;
+      }
+
+      .cls-7 {
+        fill: #0e74a4;
+      }
+
+      .cls-11 {
+        letter-spacing: .39em;
+      }
+
+      .cls-12 {
+        letter-spacing: .4em;
+      }
+
+      .cls-13 {
+        letter-spacing: .4em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-6" width="388" height="209"/>
+  <g>
+    <g>
+      <g>
+        <path class="cls-7" d="M222.59,62.88c0,14.98-.03,31.36.78,39.87h-.49c-5.83-11.66-12.61-23.42-32.67-55.85h0v-.39h32.38v.39h0v15.98Z"/>
+        <path class="cls-4" d="M182.46,137.45v-22.03c0-17.77-.05-29.78-.91-40.13h.44c5.37,11.02,27.63,49.58,34.69,62.16h-34.22Z"/>
+      </g>
+      <path class="cls-4" d="M93.86,120.57l-5.72,16.88h-29.52l34.25-90.55h38.36l36.49,90.55h-31.62l-6.15-16.88h-36.09ZM123.11,99.61c-5.91-16.3-9.32-26.6-11.6-34.18h-.45c-1.97,7.49-5.98,20.34-10.79,34.18h22.84Z"/>
+      <path class="cls-4" d="M270.26,67.77h-29.88v-20.87h89.01v20.87h-29.71v69.68h-29.42v-69.68Z"/>
+    </g>
+    <g>
+      <text class="cls-5" transform="translate(97.74 158.9)"><tspan class="cls-2" x="0" y="0">H</tspan><tspan class="cls-1" x="15.44" y="0">ol</tspan><tspan class="cls-11" x="36.9" y="0">i</tspan><tspan class="cls-10" x="45.41" y="0">s</tspan><tspan class="cls-2" x="57.13" y="0">t</tspan><tspan class="cls-1" x="66.74" y="0">i</tspan><tspan class="cls-2" x="75.32" y="0">c</tspan><tspan class="cls-1" x="87.56" y="0"> </tspan><tspan class="cls-9" x="96.58" y="0">S</tspan><tspan class="cls-1" x="110.31" y="0">ol</tspan><tspan class="cls-3" x="131.76" y="0">u</tspan><tspan class="cls-13" x="144.9" y="0">t</tspan><tspan class="cls-12" x="154.51" y="0">io</tspan><tspan class="cls-8" x="175.96" y="0">n</tspan><tspan class="cls-1" x="189.03" y="0">s</tspan></text>
+      <rect class="cls-4" x="57.05" y="154.17" width="27.7" height="1.36"/>
+      <rect class="cls-4" x="303.24" y="154.17" width="27.7" height="1.36"/>
+    </g>
+  </g>
+</svg>
