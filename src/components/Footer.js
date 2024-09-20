@@ -1,9 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between">
+        <div className="mb-6 lg:mb-0 flex items-center">
+          <img 
+            src="/Artboard 2@4x.png" 
+            alt="ANT General Trading" 
+            className="object-contain" 
+            style={{ width: '130px', height: 'auto' }} 
+          />
+        </div>
+
         <div className="mb-6 lg:mb-0">
           <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
           <p className="mb-2">
@@ -13,40 +23,39 @@ const Footer = () => {
             <a href="tel:+251996797979" className="hover:text-[#0E74A4]">+251-996-79-79-79</a>
           </p>
           <p className="mb-2">
-            <a href="mailto:coffee@praxis.com.et" className="hover:text-[#0E74A4]">coffee@praxis.com.et</a>
+            <a href="mailto:info@ANT-holding.com.et" className="hover:text-[#0E74A4]">info@ANT-holding.com.et</a>
           </p>
         </div>
 
         <div className="mb-6 lg:mb-0">
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
-            <li><a href="#company-profile" className="hover:text-[#0E74A4]">Company Profile</a></li>
-            <li><a href="#our-products" className="hover:text-[#0E74A4]">Our Products</a></li>
-            <li><a href="#sales-procedure" className="hover:text-[#0E74A4]">Sales Procedure</a></li>
+            <li><Link to="/" className="hover:text-[#0E74A4]">Home</Link></li>
+            <li><Link to="/pharma-healthcare-services" className="hover:text-[#0E74A4]">Pharmaceuticals & Healthcare Services</Link></li>
+            <li><Link to="/export-trade-services" className="hover:text-[#0E74A4]">Export Trade Services</Link></li>
+            <li><Link to="/agriculture-services" className="hover:text-[#0E74A4]">Agriculture & Food Processing Services</Link></li>
+            <li><Link to="/about-us" className="hover:text-[#0E74A4]">About Us</Link></li>
+            <li><Link to="/contact" className="hover:text-[#0E74A4]">Contact</Link></li>
           </ul>
         </div>
 
         <div className="mb-6 lg:mb-0">
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">
-              LinkedIn
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">
-              Facebook
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">
-              Twitter
-            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Facebook</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Twitter</a>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-800 py-4 mt-6">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-center items-center">
-          <p className="text-sm mb-2 md:mb-0 text-center">&copy; 2023 Praxis. All Rights Reserved.</p>
+          <div className="text-sm mb-2 md:mb-0 text-center w-full">
+            &copy; 2024 ANT General Trading and Industries Holding. All Rights Reserved.
+          </div>
           <div className="text-sm mt-2 md:mt-0">
-            <a href="#terms" className="hover:text-[#0E74A4]">Terms of Service</a> | <a href="#privacy" className="hover:text-[#0E74A4]">Privacy Policy</a>
+            <Link to="/terms" className="hover:text-[#0E74A4]">Terms of Service</Link> | <Link to="/privacy" className="hover:text-[#0E74A4]">Privacy Policy</Link>
           </div>
         </div>
       </div>
