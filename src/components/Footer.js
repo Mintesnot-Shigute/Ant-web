@@ -6,12 +6,17 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between">
         <div className="mb-6 lg:mb-0 flex items-center">
-          <img 
-            src="/Artboard 2@4x.png" 
-            alt="ANT General Trading" 
-            className="object-contain" 
-            style={{ width: '130px', height: 'auto' }} 
-          />
+        <img 
+  src="/Artboard 2@4x.png" 
+  alt="ANT General Trading" 
+  className="object-contain transition-transform duration-300 transform hover:scale-105"
+  style={{ 
+    width: '130px', 
+    height: 'auto', 
+    boxShadow: '0 4px 20px rgba(255, 255, 255, 0.5)' // Custom white shadow
+  }} 
+/>
+
         </div>
 
         <div className="mb-6 lg:mb-0">
