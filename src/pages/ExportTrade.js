@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function ExportTrade() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <div className="container mx-auto py-12">
       <h2 className="text-5xl font-bold text-center text-blue-900 mb-8">Export Trade Products</h2>

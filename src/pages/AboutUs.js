@@ -16,7 +16,7 @@ function AboutUs() {
 
         <div className="flex flex-col justify-center">
           <img 
-            src="/image2.jpg" 
+            src="/pharma.jpg" 
             alt="About Us" 
             className="w-full h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" 
           />

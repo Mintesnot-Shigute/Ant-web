@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function PharmaHealthcare() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="container mx-auto py-12">
       <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Pharmaceuticals & Healthcare Products</h2>
@@ -11,7 +17,7 @@ function PharmaHealthcare() {
 
         <div className="flex justify-center mb-8">
           <img 
-            src="/image3.jpg" 
+            src="/medicinefabric.jpg" 
             alt="Pharmaceuticals Products" 
             className="w-1/2 h-64 object-cover rounded-md mr-4"
           />
@@ -117,12 +123,12 @@ function PharmaHealthcare() {
         <h3 className="text-3xl font-semibold text-center mb-14 text-gray-700 hover:text-blue-600 transition-colors duration-300">Our Services</h3>
         <div className="flex justify-center mb-8">
           <img 
-            src="/image2.jpg" 
+            src="/pharma.jpg" 
             alt="Pharmaceutical Services" 
             className="w-1/2 h-64 object-cover rounded-md mr-4"
           />
           <img 
-            src="/image2.jpg" 
+            src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg" 
             alt="Pharmaceutical Services" 
             className="w-1/2 h-64 object-cover rounded-md"
           />

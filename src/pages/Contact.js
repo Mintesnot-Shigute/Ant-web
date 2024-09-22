@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaTelegram, FaLinkedin } from 'react-icons/fa';
 
 function Contact() {
+
+
+  // Scroll to top when the component loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="container mx-auto py-12 px-6">
       <h1 className="text-5xl font-bold text-center mb-6">Contact</h1>
