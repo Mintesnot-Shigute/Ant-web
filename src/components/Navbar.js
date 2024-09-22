@@ -11,11 +11,11 @@ function Navbar() {
             src="/Artboard 2@4x.png" 
             alt="ANT General Trading" 
             className="object-contain" 
-            style={{ width: '130px', height: 'auto', marginLeft: '10rem' }} 
+            style={{ width: '160px', height: 'auto', marginLeft: '10rem' }} 
           />
         </div>
 
-        <ul className="flex space-x-4 py-2"> {/* Adjusted space-x-6 to space-x-4 */}
+        <ul className="flex space-x-4 py-2">
           {/* Home */}
           <li className="relative">
             <Link to="/" className="nav-link mr-16">
@@ -29,14 +29,13 @@ function Navbar() {
               Services
             </Link>
             <div className="dropdown">
-              {/* Pharmaceuticals & Healthcare Services */}
-              <Link to="/pharma-healthcare-services" className="dropdown-link">
+              <Link to="/pharma-healthcare#services" className="dropdown-link">
                 Pharmaceuticals & Healthcare Services
               </Link>
-              <Link to="/export-trade-services" className="dropdown-link">
+              <Link to="/export-trade#services" className="dropdown-link">
                 Export Trade Services
               </Link>
-              <Link to="/agriculture-services" className="dropdown-link">
+              <Link to="/agriculture#services" className="dropdown-link">
                 Agriculture & Food Processing Services
               </Link>
             </div>
@@ -48,30 +47,29 @@ function Navbar() {
               Products
             </Link>
             <div className="dropdown">
-              {/* Pharmaceuticals & Healthcare Products */}
-              <Link to="/pharma-healthcare-products" className="dropdown-link">
+              <Link to="/pharma-healthcare#products" className="dropdown-link">
                 Pharmaceuticals & Healthcare Products
               </Link>
-              <Link to="/export-trade-products" className="dropdown-link">
+              <Link to="/export-trade#products" className="dropdown-link">
                 Export Trade Products
               </Link>
-              <Link to="/agriculture-products" className="dropdown-link">
+              <Link to="/agriculture#products" className="dropdown-link">
                 Agriculture & Food Processing Products
               </Link>
             </div>
           </li>
 
           {/* About Us */}
-                      <li className="relative">
-              <Link to="/about-us" className="nav-link mr-12">
-                About Us
+          <li className="relative">
+            <Link to="/about-us" className="nav-link mr-12">
+              About Us
+            </Link>
+            <div className="aboutdropdown">
+              <Link to="/why-work-with-us" className="dropdown-link">
+                Why Work With Us?
               </Link>
-              <div className="aboutdropdown">
-                <Link to="/why-work-with-us" className="dropdown-link">
-                  Why Work With Us?
-                </Link>
-              </div>
-            </li>
+            </div>
+          </li>
 
           {/* Contact */}
           <li>

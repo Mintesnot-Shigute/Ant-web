@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 function Home() {
   const images = [
-    "/image1.jpg",
+    "/image1.png",
     "/image2.jpg",
     "/image3.jpg",
     "/image4.jpg",
@@ -23,16 +23,16 @@ function Home() {
 
   const resetInterval = () => {
     clearInterval(intervalRef.current); // Clear existing interval
-    intervalRef.current = setInterval(handleNext, 2000); // Start a new interval
+    intervalRef.current = setInterval(handleNext, 5000); // Start a new interval
   };
 
   useEffect(() => {
-    intervalRef.current = setInterval(handleNext, 2000); // Change image every 2 seconds
+    intervalRef.current = setInterval(handleNext, 5000); // Change image every 2 seconds
     return () => clearInterval(intervalRef.current); // Clean up on unmount
   }, [handleNext]);
 
   return (
-    <div>
+    <div className='bg-gray-100'>
       {/* Hero Section with Carousel */}
       <div className="relative h-[500px] overflow-hidden">
         <div
@@ -56,7 +56,7 @@ function Home() {
       </div>
 
       {/* Slogan Section */}
-      <div className="flex justify-between items-start mt-12 mb-8 px-6 max-w-7xl mx-auto">
+      <div className="flex justify-between items-start mt-12 mb-8 px-6 max-w-7xl mx-auto ">
         {/* Title Section */}
         <div className="w-1/4 ml-20">
           <h2 className="text-3xl font-bold text-[#0E74A4]">
@@ -84,7 +84,7 @@ function Home() {
 
       {/* Services Section */}
       <div className="text-center mt-12 py-12 bg-gray-50">
-        <h3 className="text-2xl font-semibold text-green-600 mb-10">Our Services</h3>
+        <h3 className="text-2xl font-semibold text-[#0E74A4] mb-10">Our Services</h3>
         {/* Services Icons */}
         <div className="flex justify-center space-x-12">
           {/* Pharmaceuticals & Healthcare */}
@@ -127,7 +127,7 @@ function Home() {
 
       {/* New Section Below Services */}
       <div className="py-12 px-6 bg-gray-100">
-  <h3 className="text-2xl font-semibold text-green-600 mb-6 text-center">Our Commitment</h3>
+  <h3 className="text-2xl font-semibold text-[#0E74A4] mb-6 text-center">Our Commitment</h3>
   <div className="max-w-7xl mx-auto text-gray-600 text-base">
     {[
       {

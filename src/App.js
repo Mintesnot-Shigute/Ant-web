@@ -6,13 +6,12 @@ import './App.css'; // Custom CSS for Navbar and Footer
 import './index.css'; // Tailwind CSS styles
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
-import PharmaHealthcareProducts from './pages/PharmaHealthcareProducts';
-import PharmaHealthcareServices from './pages/PharmaHealthcareServices';
-import ExportTradeProducts from './pages/ExportTradeProducts';
-import ExportTradeServices from './pages/ExportTradeServices';
-import AgricultureProducts from './pages/AgricultureProducts';
-import AgricultureServices from './pages/AgricultureServices';
+import PharmaHealthcare from './pages/PharmaHealthcare';
+import ExportTrade from './pages/ExportTrade';
+import Agriculture from './pages/Agriculture';
 import Home from './pages/Home';  // Import the new Home page
+import WhyWorkWithUs from './pages/WhyWorkWithUs';  // Import the new Home page
+
 
 function App() {
   return (
@@ -26,12 +25,12 @@ function App() {
             <Route path="/" element={<Home />} /> {/* Home page route */}
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/pharma-healthcare-products" element={<PharmaHealthcareProducts />} />
-            <Route path="/pharma-healthcare-services" element={<PharmaHealthcareServices />} />
-            <Route path="/export-trade-products" element={<ExportTradeProducts />} />
-            <Route path="/export-trade-services" element={<ExportTradeServices />} />
-            <Route path="/agriculture-products" element={<AgricultureProducts />} />
-            <Route path="/agriculture-services" element={<AgricultureServices />} />
+            <Route path="/pharma-healthcare" element={<PharmaHealthcare />} />
+            <Route path="/export-trade" element={<ExportTrade />} />
+            <Route path="/agriculture" element={<Agriculture />} />
+            <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
+            
+
           </Routes>
         </div>
 

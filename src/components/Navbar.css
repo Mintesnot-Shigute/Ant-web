@@ -1,19 +1,20 @@
-/* Navbar.css */
+/* Navbar styles */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.5rem 1.25rem; /* Adjust padding */
+  padding: 0.75rem 1.5rem; /* Slightly increased padding for a modern look */
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer and more defined shadow */
   z-index: 50;
+  border-bottom: 2px solid #e0e0e0; /* Bottom border for clean separation */
 }
 
 .logo {
-  width: 80px; /* Logo size */
+  width: 90px;
   height: auto;
-  margin-right: 1rem; /* Adjust spacing */
+  margin-right: 1rem;
 }
 
 .flex {
@@ -21,116 +22,112 @@
 }
 
 .space-x-6 > :not(:last-child) {
-  margin-right: 1.5rem; /* Space between items */
+  margin-right: 1.5rem;
 }
 
 .nav-link {
-  font-size: 1rem; /* Adjusted font size for balance */
-  font-weight: 600; /* Increased font weight for better visibility */
-  color: #333; /* Darker color for contrast */
-  transition: color 0.3s, transform 0.3s; /* Added transform transition */
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .nav-link:hover {
-  color: #0E74A4; /* Hover color */
-  transform: translateY(-2px); /* Subtle lift effect on hover */
+  color: #0E74A4;
+  transform: translateY(-2px); /* Lift effect for interactivity */
 }
 
+/* Refined Products & Services Dropdown */
 .dropdown {
-  display: none; /* Initially hide dropdown */
-  position: absolute; /* Position dropdown */
-  top: 100%; /* Position below the nav item */
-  left: 0; /* Align with the nav item */
-  background-color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
-  border-radius: 0.5rem; /* Rounded corners */
-  z-index: 100; /* Ensure dropdown is above other elements */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  background-color: #1B3855;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger, more subtle shadow */
+  border-radius: 10px; /* Softer border radius */
+  z-index: 100;
+  white-space: normal;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth transition */
 }
-.aboutdropdown {
-    display: none; /* Initially hide dropdown */
-    position: absolute; /* Position dropdown */
-    top: 100%; /* Position below the nav item */
-    left: 0; /* Align with the nav item */
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
-    border-radius: 0.5rem; /* Rounded corners */
-    z-index: 100; /* Ensure dropdown is above other elements */
-  }
-  
-.relative:hover .dropdown {
-  display: block; /* Show dropdown on hover */
-}
-.relative:hover .aboutdropdown {
-    display: block; /* Show dropdown on hover */
-  }
 
+.relative:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
 
 .dropdown-link {
-  display: block; /* Make links block elements */
-  padding: 0.5rem 1rem; /* Padding for dropdown links */
-  color: #333; /* Match link color */
-  text-decoration: none; /* No underline */
-  transition: background-color 0.3s; /* Transition for background */
+  display: block;
+  padding: 0.75rem 1rem; /* Comfortable padding */
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: left; /* Align left for a more professional look */
+  transition: background-color 0.3s, padding 0.2s; /* Add smooth padding transition */
 }
 
 .dropdown-link:hover {
-  background-color: #f0f0f0; /* Hover background for dropdown */
+  background-color: rgba(255, 255, 255, 0.15); /* Subtle hover effect */
+  padding-left: 1.25rem; /* Slight shift for interactivity */
 }
 
-/* Additional styles for improved usability */
+/* Refined About Dropdown */
+.aboutdropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px; /* Custom size */
+  background-color: #1B3855;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 100;
+  white-space: normal;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.relative:hover .aboutdropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.aboutdropdown-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: left;
+  transition: background-color 0.3s, padding 0.2s;
+}
+
+.aboutdropdown-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-left: 1.25rem;
+}
+
+/* Additional styles for usability */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.5rem 0.75rem; /* Smaller padding on mobile */
+    padding: 0.5rem 0.75rem;
   }
 
   .space-x-6 > :not(:last-child) {
-    margin-right: 1rem; /* Reduce spacing on mobile */
+    margin-right: 1rem;
   }
 
   .nav-link {
-    font-size: 0.9rem; /* Smaller font size on mobile */
+    font-size: 0.9rem;
   }
-}
-.dropdown {
-    display: none; /* Initially hide dropdown */
-    position: absolute; /* Position dropdown */
-    top: 100%; /* Position below the nav item */
-    left: 50%; /* Center align the dropdown */
-    transform: translateX(-50%); /* Adjust for perfect centering */
-    background-color: #0E74A4; /* Dropdown background color */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
-    border-radius: 0.5rem; /* Rounded corners */
-    z-index: 100; /* Ensure dropdown is above other elements */
-    white-space: wrap; /* Prevent text wrapping */
-}
-.aboutdropdown
-{
-    display: none; /* Initially hide dropdown */
-    position: absolute; /* Position dropdown */
-    top: 100%; /* Position below the nav item */
-    left: 50%; /* Center align the dropdown */
-    transform: translateX(-50%); /* Adjust for perfect centering */
-    background-color: #0E74A4; /* Dropdown background color */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
-    border-radius: 0.5rem; /* Rounded corners */
-    z-index: 100; /* Ensure dropdown is above other elements */
-    white-space: nowrap; /* Prevent text wrapping */
-}
-.relative:hover .dropdown {
-    display: block; /* Show dropdown on hover */
-}
-
-.dropdown-link {
-    display: block; /* Make links block elements */
-    padding: 0.5rem 1rem; /* Padding for dropdown links */
-    color: white; /* Dropdown text color */
-    text-decoration: none; /* No underline */
-    transition: background-color 0.3s; /* Transition for background */
-}
-
-.dropdown-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lighter hover effect */
-}
-.navbar {
-    margin-bottom: 0; /* Remove bottom margin */
 }
