@@ -14,12 +14,15 @@ function Navbar() {
     <nav className="navbar">
       <div className="flex justify-between items-center mr-48">
         <div className="flex items-center">
-          <img 
-            src="/Artboard 2@4x.png" 
-            alt="ANT General Trading" 
-            className="object-contain" 
-            style={{ width: '160px', height: 'auto', marginLeft: '10rem' }} 
-          />
+          {/* Make the logo clickable by wrapping it in a Link */}
+          <Link to="/">
+            <img 
+              src="/Artboard 2@4x.png" 
+              alt="ANT General Trading" 
+              className="object-contain" 
+              style={{ width: '160px', height: 'auto', marginLeft: '10rem' }} 
+            />
+          </Link>
         </div>
 
         <ul className="flex space-x-4 py-2">

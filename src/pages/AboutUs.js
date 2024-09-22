@@ -42,17 +42,23 @@ function AboutUs() {
       </div>
 
       <h2 className="text-2xl font-bold mb-4 text-[#0E74A4]">Our Core Values</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 list-disc ml-6 text-lg text-gray-700 gap-4 mb-12">
-        {['Innovation', 'Integrity', 'Excellence', 'Sustainability', 'Collaboration', 'Empowerment', 
-          'Customer Focus', 'Adaptability', 'Respect', 'Global Vision'].map((value, index) => (
-          <li 
-            key={index} 
-            className="p-4 bg-gray-100 rounded-lg shadow-md transition-transform duration-300 hover:scale-105 mb-2"
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        {[
+          'Innovation', 'Integrity', 'Excellence', 'Sustainability', 'Collaboration', 'Empowerment',
+          'Customer Focus', 'Adaptability', 'Respect', 'Global Vision'
+        ].map((value, index) => (
+          <li
+            key={index}
+            className="p-6 bg-gray-100 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-200 flex items-start"
           >
-            {value}
+            <span className="w-2 h-2 bg-[#1B3855] rounded-full mr-4 mt-1"></span> {/* Dot */}
+            <span className="text-lg text-gray-700">{value}</span>
           </li>
         ))}
       </ul>
+
+
+
     </div>
   );
 }
