@@ -36,9 +36,9 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li><Link to="/" className="hover:text-[#0E74A4]">Home</Link></li>
-            <li><Link to="/pharma-healthcare-services" className="hover:text-[#0E74A4]">Pharmaceuticals & Healthcare Services</Link></li>
-            <li><Link to="/export-trade-services" className="hover:text-[#0E74A4]">Export Trade Services</Link></li>
-            <li><Link to="/agriculture-services" className="hover:text-[#0E74A4]">Agriculture & Food Processing Services</Link></li>
+            <li><Link to="/pharma-healthcare" className="hover:text-[#0E74A4]">Pharmaceuticals & Healthcare</Link></li>
+            <li><Link to="/export-trade" className="hover:text-[#0E74A4]">Export Trade</Link></li>
+            <li><Link to="/agriculture" className="hover:text-[#0E74A4]">Agriculture & Food Processing</Link></li>
             <li><Link to="/about-us" className="hover:text-[#0E74A4]">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-[#0E74A4]">Contact</Link></li>
           </ul>
