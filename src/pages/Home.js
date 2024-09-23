@@ -96,7 +96,7 @@ function Home() {
 
       {/* Services Section */}
       <div className="text-center mt-12 py-12 bg-gray-50">
-        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16">Our Services</h3>
+        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 hover:text-gray-600 transition-colors duration-300">Our Services</h3>
         {/* Services Icons */}
         <div className="flex justify-center space-x-12">
           {/* Pharmaceuticals & Healthcare */}
@@ -153,7 +153,7 @@ function Home() {
 
       {/* New Section Below Services */}
       <div className="py-12 px-6 bg-gray-100">
-        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 text-center">Our Commitment</h3>
+        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 text-center hover:text-gray-600 transition-colors duration-300">Our Commitment</h3>
         <div className="max-w-7xl mx-auto text-gray-600 text-base">
           {[
             {

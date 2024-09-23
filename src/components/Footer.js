@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div style={{ backgroundColor: '#1B3855' }} className="py-0 mt-6">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-center items-center mb-8">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-center items-center mb-4">
           <div className="text-sm mb-2 md:mb-0 text-center w-full text-white flex items-center justify-center "> {/* Center the copyright and links */}
             &copy; 2024 ANT General Trading and Industries Holding. All Rights Reserved.
             <div className="flex text-sm ml-14"> {/* Use flex for links */}

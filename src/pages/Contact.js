@@ -129,7 +129,7 @@ function Contact() {
             onClick={() => handleImageClick('CEO.png')}
           />
           <h3 className="text-xl font-semibold">CEO</h3>
-          <p className="text-center text-gray-600">Brief details about the CEO.</p>
+        
         </div>
 
         {/* Executive Chairman */}
@@ -141,7 +141,7 @@ function Contact() {
             onClick={() => handleImageClick('chairman.png')}
           />
           <h3 className="text-xl font-semibold">Executive Chairman</h3>
-          <p className="text-center text-gray-600">Brief details about the Executive Chairman.</p>
+    
         </div>
       </div>
 
