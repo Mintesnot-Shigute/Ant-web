@@ -57,7 +57,42 @@ function AboutUs() {
         ))}
       </ul>
 
+{/* Existing content here... */}
 
+{/* Governance and Number of Employees Section */}
+<div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md p-6 mt-12">
+        <div className="flex-1 mb-6 md:mr-6">
+          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center">Governance</h2>
+          <p className="text-lg text-gray-700 mb-4">
+            The company is governed by a Board of Directors (BoD) chaired by an 
+            Executive Chairman, providing strategic oversight and governance. The 
+            CEO, reporting directly to the Board, leads the operational execution and is 
+            responsible for the overall performance of the business. Below the CEO 
+            are Managing Directors (MDs) for each of the company's core verticals: 
+            Pharmaceuticals and Healthcare, Export Trade, and Agriculture and 
+            Food Processing. These MDs manage their respective verticals, ensuring 
+            alignment with the company's strategic goals while driving growth, 
+            innovation, and efficiency in their areas. This structure allows for clear 
+            accountability, streamlined decision-making, and focused leadership 
+            across the business sectors.
+          </p>
+
+          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center">Number of Employees</h2>
+          <p className="text-lg text-gray-700">
+            Initially 40 employees, with ambition to create job opportunities for over 
+            2,000 employees as all subsidiaries become functional.
+          </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="flex-1">
+          <img 
+            src="/governance.png"  // replace with actual image path
+            alt="Governance"
+            className="w-full max-w-xm h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+      </div>
 
     </div>
   );

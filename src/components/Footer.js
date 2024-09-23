@@ -42,7 +42,7 @@ const Footer = () => {
             <li><Link to="/pharma-healthcare" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Pharmaceuticals & Healthcare</Link></li>
             <li><Link to="/export-trade" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Export Trade</Link></li>
             <li><Link to="/agriculture" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Agriculture & Food Processing</Link></li>
-            <li><Link to="/about-us" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">About Us</Link></li>
+            <li><Link to="/about-us" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Who We Are</Link></li>
             <li><Link to="/contact" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Contact</Link></li>
           </ul>
         </div>
@@ -59,11 +59,12 @@ const Footer = () => {
 
       <div style={{ backgroundColor: '#1B3855' }} className="py-0 mt-6">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-center items-center">
-          <div className="text-sm mb-2 md:mb-0 text-center w-full text-white">
+          <div className="text-sm mb-2 md:mb-0 text-center w-full text-white flex items-center justify-center"> {/* Center the copyright and links */}
             &copy; 2024 ANT General Trading and Industries Holding. All Rights Reserved.
-          </div>
-          <div className="text-sm mt-2 md:mt-0 text-white">
-            <Link to="/terms" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Service</Link> | <Link to="/privacy" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Privacy Policy</Link>
+            <div className="flex text-sm ml-14"> {/* Use flex for links */}
+              <Link to="/terms" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Service </Link> | 
+              <Link to="/privacy" onClick={handleScrollToTop} className="hover:text-[#0E74A4] ml-2">Privacy Policy</Link>
+            </div>
           </div>
         </div>
       </div>

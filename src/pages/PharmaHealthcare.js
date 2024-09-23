@@ -8,7 +8,7 @@ function PharmaHealthcare() {
 
 
   return (
-    <div className="container mx-auto py-12">
+    <div id="products"className="container mx-auto py-12">
       <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Pharmaceuticals & Healthcare Products</h2>
 
       {/* Products Section */}
@@ -30,7 +30,7 @@ function PharmaHealthcare() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Essential Pharmaceuticals Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-48">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Essential Pharmaceuticals</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Essential Pharmaceuticals</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -57,7 +57,7 @@ function PharmaHealthcare() {
 
           {/* Specialty Pharmaceuticals Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Specialty Pharmaceuticals</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Specialty Pharmaceuticals</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -80,7 +80,7 @@ function PharmaHealthcare() {
 
           {/* Diagnostics Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-48">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Diagnostics</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Diagnostics</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -99,7 +99,7 @@ function PharmaHealthcare() {
 
           {/* Medical Equipment Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Medical Equipment</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Medical Equipment</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -119,7 +119,7 @@ function PharmaHealthcare() {
       </div>
 
       {/* Services Section */}
-      <div className="mb-12">
+      <div id="services" className="mb-12">
         <h3 className="text-3xl font-semibold text-center mb-14 text-gray-700 hover:text-blue-600 transition-colors duration-300">Our Services</h3>
         <div className="flex justify-center mb-8">
           <img 

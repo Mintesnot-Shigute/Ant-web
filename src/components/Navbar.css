@@ -11,6 +11,10 @@
   border-bottom: 2px solid #e0e0e0; /* Bottom border for clean separation */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   width: 90px;
   height: auto;

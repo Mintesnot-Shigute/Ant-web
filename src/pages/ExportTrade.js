@@ -2,13 +2,11 @@ import React, { useEffect } from 'react';
 
 function ExportTrade() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
 
   
   return (
-    <div className="container mx-auto py-12">
+    <div id="products" className="container mx-auto py-12">
       <h2 className="text-5xl font-bold text-center text-blue-900 mb-8">Export Trade Products</h2>
       <p className="text-gray-600 text-center mb-10 text-lg max-w-2xl mx-auto">
         Explore our range of high-quality products under Export Trade, sourced directly from trusted suppliers.
@@ -17,7 +15,7 @@ function ExportTrade() {
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full px-4">
           {/* Specialty Coffee Section */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 mx-auto">
+          <div  className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 mx-auto">
             <img src="/AntCoffe.jpg" alt="Specialty Coffee" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-bold text-blue-700 mb-4">SPECIALTY COFFEE</h3>
@@ -49,7 +47,7 @@ function ExportTrade() {
         </div>
       </div>
 
-      <h3 className="text-4xl font-semibold text-blue-800 text-center mt-16 mb-16">Services</h3>
+      <h3 className="text-4xl font-semibold text-blue-800 text-center mt-16 mb-16" id="services">Services</h3>
 
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full px-4">

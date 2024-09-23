@@ -1,25 +1,33 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css'; // Import the CSS file
+import './Navbar.css';
 
 function Navbar() {
   const location = useLocation();
 
-  // Scroll to top on route change
+  // Scroll to the correct section on route change with an offset
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        const yOffset = -130; // Adjust this value based on your navbar height or desired margin
+        const yPosition = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: yPosition, behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0); // Scroll to top on route change (if no hash)
+    }
   }, [location]);
 
   return (
     <nav className="navbar">
       <div className="flex justify-between items-center mr-48">
         <div className="flex items-center">
-          {/* Make the logo clickable by wrapping it in a Link */}
           <Link to="/">
             <img 
               src="/Artboard 2@4x.png" 
               alt="ANT General Trading" 
-              className="object-contain" 
+              className="object-contain logo" 
               style={{ width: '160px', height: 'auto', marginLeft: '10rem' }} 
             />
           </Link>
@@ -69,13 +77,16 @@ function Navbar() {
             </div>
           </li>
 
-          {/* About Us */}
-          <li className="relative">
-            <Link to="/about-us" className="nav-link mr-12">
+          {/* About Us Dropdown */}
+          <li className="relative group">
+            <Link to="/#" className="nav-link mr-16">
               About Us
             </Link>
             <div className="aboutdropdown">
-              <Link to="/why-work-with-us" className="dropdown-link">
+              <Link to="/about-us" className="aboutdropdown-link">
+                Who We Are
+              </Link>
+              <Link to="/why-work-with-us" className="aboutdropdown-link">
                 Why Work With Us?
               </Link>
             </div>

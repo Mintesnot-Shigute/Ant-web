@@ -1,13 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaTelegram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+
 
 function Contact() {
-
-
   // Scroll to top when the component loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // State to manage modal visibility
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  // Function to handle image click
+  const handleImageClick = (src) => {
+    setSelectedImage(src);
+    setIsOpen(true);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage('');
+  };
 
   return (
     <div className="container mx-auto py-12 px-6">
@@ -15,7 +32,7 @@ function Contact() {
 
       {/* Breadcrumb */}
       <div className="flex justify-center mb-4 text-gray-500">
-        <span className="mr-2">Home</span>
+      <Link to="/"><span className="mr-2">Home</span></Link>
         <span>/</span>
         <span className="ml-2">Contact</span>
       </div>
@@ -100,6 +117,40 @@ function Contact() {
           className="border-0 rounded-lg shadow-lg"
         ></iframe>
       </div>
+
+      {/* CEO and Executive Chairman Images */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* CEO */}
+        <div className="flex flex-col items-center">
+          <img
+            src="CEO.png"
+            alt="CEO"
+            className="rounded-lg shadow-lg mb-4 w-full max-w-xs cursor-pointer hover:shadow-xl hover:scale-105 transition-transform"
+            onClick={() => handleImageClick('CEO.png')}
+          />
+          <h3 className="text-xl font-semibold">CEO</h3>
+          <p className="text-center text-gray-600">Brief details about the CEO.</p>
+        </div>
+
+        {/* Executive Chairman */}
+        <div className="flex flex-col items-center">
+          <img
+            src="chairman.png"
+            alt="Executive Chairman"
+            className="rounded-lg shadow-lg mb-4 w-full max-w-xs cursor-pointer hover:shadow-xl hover:scale-105 transition-transform"
+            onClick={() => handleImageClick('chairman.png')}
+          />
+          <h3 className="text-xl font-semibold">Executive Chairman</h3>
+          <p className="text-center text-gray-600">Brief details about the Executive Chairman.</p>
+        </div>
+      </div>
+
+      {/* Modal for Image Display */}
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+          <img src={selectedImage} alt="Enlarged View" className="rounded-lg max-w-3xl" />
+        </div>
+      )}
     </div>
   );
 }
