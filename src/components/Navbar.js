@@ -27,8 +27,12 @@ function Navbar() {
             <img 
               src="/Artboard 2@4x.png" 
               alt="ANT General Trading" 
-              className="object-contain logo" 
-              style={{ width: '160px', height: 'auto', marginLeft: '10rem' }} 
+              className="object-contain transition-transform duration-300 transform hover:scale-105" 
+              style={{ width: '160px',
+                 height: 'auto', 
+                 marginLeft: '10rem',
+                 boxShadow: '0 4px 20px rgba(255, 255, 255, 0.5)'
+                 }} 
             />
           </Link>
         </div>

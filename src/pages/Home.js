@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -14,9 +14,9 @@ function Home() {
   const [autoPlay, setAutoPlay] = useState(true);
   const intervalRef = useRef(null);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]);
 
   const handleDotClick = (index) => {
     setCurrentIndex(index);
@@ -28,7 +28,7 @@ function Home() {
       intervalRef.current = setInterval(handleNext, 5000);
     }
     return () => clearInterval(intervalRef.current);
-  }, [autoPlay]);
+  }, [autoPlay, handleNext]);
 
   return (
     <div className='bg-gray-100'>
@@ -58,17 +58,16 @@ function Home() {
             </div>
           ))}
         </div>
-                  {/* Dot Navigation */}
-          <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col space-y-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handleDotClick(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${currentIndex === index ? 'bg-[#0E74A4]' : 'bg-gray-300 hover:bg-[#0E74A4]'}`}
-              />
-            ))}
-          </div>
-
+        {/* Dot Navigation */}
+        <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col space-y-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => handleDotClick(index)}
+              className={`w-3 h-3 rounded-full transition-colors duration-300 ${currentIndex === index ? 'bg-[#0E74A4]' : 'bg-gray-300 hover:bg-[#0E74A4]'}`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Slogan Section */}
@@ -81,29 +80,31 @@ function Home() {
         <div className="w-1/2 px-4 mx-auto">
           <p className="text-gray-600 text-base text-justify mb-4">
             ANT General Trading and Industries Holding is deeply committed to transforming lives
-             and inspiring futures through innovative, holistic solutions in pharmaceuticals and 
-             healthcare, export trade, agriculture, and food processing.
+            and inspiring futures through innovative, holistic solutions in pharmaceuticals and
+            healthcare, export trade, agriculture, and food processing.
           </p>
         </div>
-         {/* Second Column Content */}
-         <div className="w-1/2 px-4 mx-auto">
+        {/* Second Column Content */}
+        <div className="w-1/2 px-4 mx-auto">
           <p className="text-gray-600 text-base text-justify mb-4">
-            With a steadfast dedication to quality, excellence, and sustainability, 
+            With a steadfast dedication to quality, excellence, and sustainability,
             we empower individuals and communities, providing the resources and tools
             they need to thrive.
           </p>
         </div>
       </div>
 
-       {/* Services Section */}
-       <div className="text-center mt-12 py-12 bg-gray-50">
-        <h3 className="text-2xl font-semibold text-[#0E74A4] mb-10">Our Services</h3>
+      {/* Services Section */}
+      <div className="text-center mt-12 py-12 bg-gray-50">
+        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16">Our Services</h3>
         {/* Services Icons */}
         <div className="flex justify-center space-x-12">
           {/* Pharmaceuticals & Healthcare */}
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-6 transition-transform transform hover:scale-105">
-              <img src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg" alt="Pharmaceuticals & Healthcare" className="h-full w-full object-cover" />
+              <img src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg"
+                alt="Pharmaceuticals & Healthcare"
+                className="h-full w-full object-cover" />
             </div>
             <h4 className="text-xl font-semibold mb-2">Pharmaceuticals & Healthcare</h4>
             <p className="text-gray-600 mb-4 max-w-xs text-center">
@@ -113,7 +114,7 @@ function Home() {
               <button className="bg-[#1B3855] text-white py-2 px-6 rounded-full hover:bg-[#0E74A4] transition w-full">
                 Read More
               </button>
-            </Link>       
+            </Link>
           </div>
 
           {/* Export Trade */}
@@ -129,7 +130,7 @@ function Home() {
               <button className="bg-[#1B3855] text-white py-2 px-6 rounded-full hover:bg-[#0E74A4] transition w-full">
                 Read More
               </button>
-            </Link>     
+            </Link>
           </div>
 
           {/* Agriculture & Food Processing */}
@@ -145,74 +146,93 @@ function Home() {
               <button className="bg-[#1B3855] text-white py-2 px-6 rounded-full hover:bg-[#0E74A4] transition w-full">
                 Read More
               </button>
-            </Link>        
+            </Link>
           </div>
         </div>
       </div>
 
-{/* New Section Below Services */}
-<div className="py-12 px-6 bg-gray-100">
-  <h3 className="text-2xl font-semibold text-[#0E74A4] mb-6 text-center">Our Commitment</h3>
-  <div className="max-w-7xl mx-auto text-gray-600 text-base">
-    {[
-      {
-        title: "Quality Control",
-        items: [
-          "Rigorous quality testing and certification processes",
-          "Implementation of quality assurance protocols to ensure product consistency and safety",
-          "Traceability systems to track products from farm to export",
-        ],
-      },
-      {
-        title: "Logistics and Export",
-        items: [
-          "Efficient supply chain management and logistics coordination",
-          "Handling of export documentation and regulatory compliance",
-          "Coordination with shipping and freight companies for timely delivery",
-          "Warehousing and inventory management",
-        ],
-      },
-      {
-        title: "Market Research and Development",
-        items: [
-          "Market analysis and identification of potential export markets",
-          "Development of marketing strategies to promote products internationally",
-          "Participation in trade shows and international exhibitions",
-          "Building and maintaining relationships with international buyers",
-        ],
-      },
-      {
-        title: "Consultation and Advisory",
-        items: [
-          "Advisory services for farmers and cooperatives on best agricultural practices",
-          "Training programs for improving product quality and yield",
-          "Guidance on international trade regulations and export procedures",
-          "Support in obtaining necessary certifications (e.g., organic, fair trade)",
-        ],
-      },
-      {
-        title: "Sustainability and Social Responsibility",
-        items: [
-          "Implementation of sustainable farming practices",
-          "Support for community development projects",
-          "Ensuring fair trade and ethical sourcing practices",
-          "Promoting environmental conservation and biodiversity",
-        ],
-      },
-    ].map(({ title, items }) => (
-      <div key={title} className="mb-8 transition-transform transform hover:scale-105 hover:shadow-lg">
-        <h4 className="font-bold text-lg mt-4 mb-2 text-[#1B3855]">{title}</h4>
-        <ul className="list-disc list-inside text-gray-600 text-base space-y-1">
-          {items.map((item) => (
-            <li key={item} className="transition-transform transform hover:translate-x-1 hover:text-[#0E74A4]">
-              {item}
-            </li>
+      {/* New Section Below Services */}
+      <div className="py-12 px-6 bg-gray-100">
+        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 text-center">Our Commitment</h3>
+        <div className="max-w-7xl mx-auto text-gray-600 text-base">
+          {[
+            {
+              title: "Quality Control",
+              items: [
+                "Rigorous quality testing and certification processes",
+                "Implementation of quality assurance protocols to ensure product consistency and safety",
+                "Traceability systems to track products from farm to export",
+              ],
+            },
+            {
+              title: "Logistics and Export",
+              items: [
+                "Efficient supply chain management and logistics coordination",
+                "Handling of export documentation and regulatory compliance",
+                "Coordination with shipping and freight companies for timely delivery",
+                "Warehousing and inventory management",
+              ],
+            },
+            {
+              title: "Market Research and Development",
+              items: [
+                "Market analysis and identification of potential export markets",
+                "Development of marketing strategies to promote products internationally",
+                "Participation in trade shows and international exhibitions",
+                "Building and maintaining relationships with international buyers",
+              ],
+            },
+            {
+              title: "Consultation and Advisory",
+              items: [
+                "Advisory services for farmers and cooperatives on best agricultural practices",
+                "Training programs for improving product quality and yield",
+                "Guidance on international trade regulations and export procedures",
+                "Support in obtaining necessary certifications (e.g., organic, fair trade)",
+              ],
+            },
+            {
+              title: "Sustainability and Social Responsibility",
+              items: [
+                "Implementation of sustainable farming practices",
+                "Support for community development projects",
+                "Ensuring fair trade and ethical sourcing practices",
+                "Promoting environmental conservation and biodiversity",
+              ],
+            },
+          ].map(({ title, items }, index) => (
+            <div key={index} className="mb-6">
+                                  <h4
+                    className="text-lg font-bold text-[#0E74A4] mb-4 p-2 hover:scale-90 transition-transform"
+                    style={{
+                      backgroundImage: `repeating-linear-gradient(
+                        120deg,
+                        rgba(0, 0, 0, 0.05),
+                        rgba(0, 0, 0, 0.05) 10px,
+                        transparent 55px,
+                        transparent 20px
+                      )`,
+                      maxWidth: '50%', // Limit the background width to half of the screen
+                      
+                    }}
+                  >
+                    {title}
+                  </h4>
+
+              <ul className="list-disc pl-5">
+                {items.map((item, index) => (
+                  <li 
+                    key={index} 
+                    className="mb-1 transition-colors duration-300 hover:text-[#0E74A4] "
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
     </div>
   );

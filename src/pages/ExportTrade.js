@@ -18,15 +18,15 @@ function ExportTrade() {
             <img src="/AntCoffe.jpg" alt="Specialty Coffee" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-bold text-[#0E74A4] mb-4">SPECIALTY COFFEE</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
-                <li>Single-origin coffee beans</li>
-                <li>Organic coffee beans</li>
-                <li>Fair trade certified coffee</li>
-                <li>Green coffee beans</li>
-                <li>Roasted coffee beans</li>
-                <li>Coffee blends</li>
-                <li>Decaffeinated coffee</li>
-                <li>Specialty coffee pods and capsules</li>
+              <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Single-origin coffee beans</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Organic coffee beans</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Fair trade certified coffee</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Green coffee beans</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Roasted coffee beans</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Coffee blends</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Decaffeinated coffee</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Specialty coffee pods and capsules</li>
               </ul>
             </div>
           </div>
@@ -36,10 +36,10 @@ function ExportTrade() {
             <img src="/AntOilseed.jpg" alt="Oil Seeds" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-bold text-[#0E74A4] mb-4">OIL SEEDS</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
-                <li>Sesame seeds (white and black)</li>
-                <li>Sunflower seeds</li>
-                <li>Cotton seeds</li>
+              <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Sesame seeds (white and black)</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Sunflower seeds</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Cotton seeds</li>
               </ul>
             </div>
           </div>
@@ -55,10 +55,10 @@ function ExportTrade() {
             <img src="/Sourcing.jpg" alt="Sourcing and Procurement" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h4 className="text-2xl font-bold text-[#0E74A4] mb-4">SOURCING AND PROCUREMENT</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
-                <li>Identification and procurement of high-quality specialty coffee, oil seeds, and pulses from local farmers and cooperatives</li>
-                <li>Establishing partnerships with reliable and sustainable producers</li>
-                <li>Ensuring compliance with international quality standards and certifications</li>
+              <ul className="list-none list-inside text-gray-700 space-y-1">
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Identification and procurement of high-quality specialty coffee, oil seeds, and pulses from local farmers and cooperatives</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Establishing partnerships with reliable and sustainable producers</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Ensuring compliance with international quality standards and certifications</li>
               </ul>
             </div>
           </div>
@@ -68,10 +68,10 @@ function ExportTrade() {
             <img src="/Processing.jpg" alt="Processing and Packaging" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h4 className="text-2xl font-bold text-[#0E74A4] mb-4">PROCESSING AND PACKAGING</h4>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
-                <li>Cleaning, sorting, and grading of coffee beans, oil seeds, and pulses</li>
-                <li>Custom processing services, including roasting (for coffee) and shelling (for seeds)</li>
-                <li>Packaging solutions tailored to client requirements (e.g., bulk packaging, retail packaging)</li>
+              <ul className="list-none list-inside text-gray-700 space-y-1">
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Cleaning, sorting, and grading of coffee beans, oil seeds, and pulses</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Custom processing services, including roasting (for coffee) and shelling (for seeds)</li>
+                <li className="mb-1" style={{ listStyleType: 'square' }}>Packaging solutions tailored to client requirements (e.g., bulk packaging, retail packaging)</li>
               </ul>
             </div>
           </div>

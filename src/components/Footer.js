@@ -10,6 +10,7 @@ const Footer = () => {
     <footer style={{ backgroundColor: '#1B3855' }} className="#1B3855 text-white py-4 mb-0">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between">
         <div className="mb-6 lg:mb-0 flex items-center">
+        <Link to="/">
           <img 
             src="/Artboard 2@4x.png" 
             alt="ANT General Trading" 
@@ -20,6 +21,7 @@ const Footer = () => {
               boxShadow: '0 4px 20px rgba(255, 255, 255, 0.5)' // Custom white shadow
             }} 
           />
+        </Link>
         </div>
 
         <div className="mb-6 lg:mb-0">
