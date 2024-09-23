@@ -44,7 +44,7 @@ function Contact() {
       {/* Contact Info Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center mb-12">
         {/* Email & Phone */}
-        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">EMAIL & PHONE</h2>
           <a href="mailto:info@ANT-holding.com.et" className="block mb-2 text-[#0E74A4]">
             info@ANT-holding.com.et
@@ -58,7 +58,7 @@ function Contact() {
         </div>
 
         {/* Visit Us */}
-        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">VISIT US</h2>
           <a
             href="https://www.google.com/maps/place/Addis+Ababa,+Ethiopia"
@@ -71,7 +71,7 @@ function Contact() {
         </div>
 
         {/* Chat With Us */}
-        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">CHAT WITH US</h2>
           <a
             href="https://wa.me/+251911213682"
@@ -92,7 +92,7 @@ function Contact() {
         </div>
 
         {/* Social Media */}
-        <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+        <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">SOCIAL MEDIA</h2>
           <a
             href="https://linkedin.com"

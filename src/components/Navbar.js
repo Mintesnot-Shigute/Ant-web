@@ -79,7 +79,7 @@ function Navbar() {
 
           {/* About Us Dropdown */}
           <li className="relative group">
-            <Link to="/#" className="nav-link mr-16">
+            <Link to="#" className="nav-link mr-16">
               About Us
             </Link>
             <div className="aboutdropdown">

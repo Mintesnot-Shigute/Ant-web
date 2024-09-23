@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function Agriculture() {
   // Scroll to top when the component loads
@@ -11,9 +11,8 @@ function Agriculture() {
         <h2 className="text-5xl font-bold text-center  mb-8 text-[#1B3855]">
           Agriculture & Food Processing Products
         </h2>
-        <p className="text-gray-600 text-center mb-10 text-lg max-w-2xl mx-auto">
-          Discover our wide range of high-quality products in Agriculture & Food Processing, designed to meet the needs of farmers and consumers alike.
-        </p>
+        <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Products</h3>
+
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Agriculture Products */}
@@ -75,9 +74,8 @@ function Agriculture() {
       </div>
 
       {/* Agriculture & Food Processing Services Section */}
-      <h3 className="text-4xl font-semibold text-[#1B3855] text-center mb-6" id="services">
-        Agriculture & Food Processing Services
-      </h3>
+      <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300" id="services">Our Services</h3>
+
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Service Column 1 */}

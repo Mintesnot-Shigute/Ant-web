@@ -1,19 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function PharmaHealthcare() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
 
   return (
     <div id="products"className="container mx-auto py-12">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Pharmaceuticals & Healthcare Products</h2>
+      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare Products</h2>
 
       {/* Products Section */}
       <div className="mb-12">
-      <h3 className="text-3xl font-semibold text-center mb-14 text-gray-700 hover:text-blue-600 transition-colors duration-300">Our Products</h3>
+      <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Products</h3>
 
         <div className="flex justify-center mb-8">
           <img 
@@ -120,7 +117,7 @@ function PharmaHealthcare() {
 
       {/* Services Section */}
       <div id="services" className="mb-12">
-        <h3 className="text-3xl font-semibold text-center mb-14 text-gray-700 hover:text-blue-600 transition-colors duration-300">Our Services</h3>
+        <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Services</h3>
         <div className="flex justify-center mb-8">
           <img 
             src="/pharma.jpg" 
@@ -136,7 +133,7 @@ function PharmaHealthcare() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Import and Distribution Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-48">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Import and Distribution</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Import and Distribution</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -155,7 +152,7 @@ function PharmaHealthcare() {
 
           {/* Manufacturing Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Manufacturing</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Manufacturing</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -174,7 +171,7 @@ function PharmaHealthcare() {
 
           {/* Diagnostic Services Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-48">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Diagnostic Services</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Diagnostic Services</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
@@ -189,7 +186,7 @@ function PharmaHealthcare() {
 
           {/* Training Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-2xl font-semibold mb-4 text-gray-600">Training</h4>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Training</h4>
             <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
               <li className="flex items-center">
                 <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
