@@ -16,12 +16,12 @@ function PharmaHealthcare() {
           <img 
             src="/medicinefabric.jpg" 
             alt="Pharmaceuticals Products" 
-            className="w-1/2 h-64 object-cover rounded-md mr-4"
+            className="w-1/3 h-64 object-cover rounded-md mr-24"
           />
           <img 
             src="/AdobeStock_110350441.jpg" 
             alt="Pharmaceuticals Products" 
-            className="w-1/2 h-64 object-cover rounded-md"
+            className="w-1/3 h-64 object-cover rounded-md"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -122,12 +122,12 @@ function PharmaHealthcare() {
           <img 
             src="/pharma.jpg" 
             alt="Pharmaceutical Services" 
-            className="w-1/2 h-64 object-cover rounded-md mr-4"
+            className="w-1/3 h-64 object-cover rounded-md mr-24"
           />
           <img 
             src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg" 
             alt="Pharmaceutical Services" 
-            className="w-1/2 h-64 object-cover rounded-md"
+            className="w-1/3 h-64 object-cover rounded-md"
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

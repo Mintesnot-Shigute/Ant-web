@@ -136,7 +136,7 @@ function Home() {
           {/* Agriculture & Food Processing */}
           <div className="flex flex-col items-center">
             <div className="w-32 h-32 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-6 transition-transform transform hover:scale-105">
-              <img src="/image2.jpg" alt="Agriculture & Food Processing" className="h-full w-full object-cover" />
+              <img src="/AgriCollage.jpg" alt="Agriculture & Food Processing" className="h-full w-full object-cover" />
             </div>
             <h4 className="text-xl font-semibold mb-2">Agriculture & Food Processing</h4>
             <p className="text-gray-600 mb-4 max-w-xs text-center">

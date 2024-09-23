@@ -28,7 +28,7 @@ function Contact() {
 
   return (
     <div className="container mx-auto py-12 px-6">
-      <h1 className="text-5xl font-bold text-center mb-6">Contact</h1>
+      <h1 className="text-5xl font-bold text-center mb-6 hover:text-gray-600 transition-colors duration-300">Contact</h1>
 
       {/* Breadcrumb */}
       <div className="flex justify-center mb-4 text-gray-500">

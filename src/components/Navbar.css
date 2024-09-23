@@ -4,17 +4,18 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.75rem 1.5rem; /* Slightly increased padding for a modern look */
+  padding: 0.75rem 1.5rem;
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Softer and more defined shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 50;
-  border-bottom: 2px solid #e0e0e0; /* Bottom border for clean separation */
+  border-bottom: 2px solid #e0e0e0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/* Logo */
 .logo {
   width: 90px;
   height: auto;
@@ -38,7 +39,7 @@ html {
 
 .nav-link:hover {
   color: #0E74A4;
-  transform: translateY(-2px); /* Lift effect for interactivity */
+  transform: translateY(-2px);
 }
 
 /* Refined Products & Services Dropdown */
@@ -50,14 +51,14 @@ html {
   transform: translateX(-50%);
   width: 180px;
   background-color: #1B3855;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Larger, more subtle shadow */
-  border-radius: 10px; /* Softer border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   z-index: 100;
   white-space: normal;
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth transition */
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
 .relative:hover .dropdown {
@@ -68,17 +69,17 @@ html {
 
 .dropdown-link {
   display: block;
-  padding: 0.75rem 1rem; /* Comfortable padding */
+  padding: 0.75rem 1rem;
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
-  text-align: left; /* Align left for a more professional look */
-  transition: background-color 0.3s, padding 0.2s; /* Add smooth padding transition */
+  text-align: left;
+  transition: background-color 0.3s, padding 0.2s;
 }
 
 .dropdown-link:hover {
-  background-color: rgba(255, 255, 255, 0.15); /* Subtle hover effect */
-  padding-left: 1.25rem; /* Slight shift for interactivity */
+  background-color: rgba(255, 255, 255, 0.15);
+  padding-left: 1.25rem;
 }
 
 /* Refined About Dropdown */
@@ -88,7 +89,7 @@ html {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 140px; /* Custom size */
+  width: 140px;
   background-color: #1B3855;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -121,17 +122,84 @@ html {
   padding-left: 1.25rem;
 }
 
-/* Additional styles for usability */
-@media (max-width: 768px) {
+/* Mobile & Tablet Styles */
+@media (max-width: 1024px) {
+  /* Change layout for tablet and mobile */
   .navbar {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
   }
 
-  .space-x-6 > :not(:last-child) {
-    margin-right: 1rem;
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+    display: none; /* Hide the nav links initially on mobile/tablet */
+    align-items: center;
+  }
+
+  ul.active {
+    display: flex; /* Show nav links when active */
   }
 
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
   }
+
+  .dropdown,
+  .aboutdropdown {
+    position: static;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown-link,
+  .aboutdropdown-link {
+    padding: 1rem 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Active Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 5px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -5px;
 }

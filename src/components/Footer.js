@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-6 lg:mb-0">
-          <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+          <h4 className="text-lg font-semibold mb-4 ">Contact Us</h4>
           <p className="mb-2">
             <a href="tel:+251992454545" className="hover:text-[#0E74A4]">+251-992-45-45-45</a>
           </p>
@@ -64,8 +64,8 @@ const Footer = () => {
           <div className="text-sm mb-2 md:mb-0 text-center w-full text-white flex items-center justify-center "> {/* Center the copyright and links */}
             &copy; 2024 ANT General Trading and Industries Holding. All Rights Reserved.
             <div className="flex text-sm ml-14"> {/* Use flex for links */}
-              <Link to="/terms" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Service </Link> | 
-              <Link to="/privacy" onClick={handleScrollToTop} className="hover:text-[#0E74A4] ml-2">Privacy Policy</Link>
+              <Link to="/" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Service </Link> | 
+              <Link to="/" onClick={handleScrollToTop} className="hover:text-[#0E74A4] ml-2">Privacy Policy</Link>
             </div>
           </div>
         </div>
