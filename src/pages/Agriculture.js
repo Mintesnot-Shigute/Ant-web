@@ -72,9 +72,11 @@ function Agriculture() {
           </div>
         </div>
       </div>
-
+      <h2 className="text-5xl font-bold text-center  mb-8 text-[#1B3855]" id="services">
+          Agriculture & Food Processing Services
+        </h2>
       {/* Agriculture & Food Processing Services Section */}
-      <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300" id="services">Our Services</h3>
+      <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300" >Our Services</h3>
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

@@ -106,25 +106,26 @@ function Contact() {
       {/* Main Content: Map on the left and Form on the right */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 items-start">
         {/* Google Map Embed */}
-        <div className="w-full">
+                <div className="w-full">
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.475850291147!2d38.7284555!3d9.0407886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b856121d3fd1d3%3A0x420751d979ff32c8!2s9%C2%B002%2726.8%22N%2038%C2%B043%2751.7%22E!5e0!3m2!1sen!2set!4v1695671298210!5m2!1sen!2set"
             width="100%"
-            height="450"
+            height="600" // Increased height
             allowFullScreen=""
             loading="lazy"
             className="border-0 rounded-lg shadow-lg"
           ></iframe>
         </div>
 
+
         {/* Contact Form */}
-        <div className="w-full bg-gray-100 p-1 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold text-center">Send Us a Message</h2>
+        <div className="w-full bg-gray-100 p-11 rounded-lg shadow-md hover:scale-105 transition-transform">
+          <h2 className="text-2xl font-semibold text-center 4">Send Us a Message</h2>
           <form className="space-y-4">
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email</label>
+              <label htmlFor="email" className="block text-lg font-medium text-gray-700 p-2 ">Email</label>
               <input
                 type="email"
                 id="email"
@@ -137,7 +138,7 @@ function Contact() {
 
             {/* Subject Field */}
             <div>
-              <label htmlFor="subject" className="block text-lg font-medium text-gray-700">Subject</label>
+              <label htmlFor="subject" className="block text-lg font-medium text-gray-700 p-2">Subject</label>
               <input
                 type="text"
                 id="subject"
@@ -150,7 +151,7 @@ function Contact() {
 
             {/* Comment/Message Field */}
             <div>
-              <label htmlFor="message" className="block text-lg font-medium text-gray-700">Comment/Message</label>
+              <label htmlFor="message" className="block text-lg font-medium text-gray-700 p-2">Comment/Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -165,7 +166,7 @@ function Contact() {
             <div className="text-center">
               <button
                 type="submit"
-                className="px-6 py-3 bg-[#0E74A4] text-white rounded-lg shadow hover:bg-[#074D7B] transition-colors duration-300"
+                className="mt-6 px-10 py-3 bg-[#0E74A4] text-white rounded-lg shadow hover:bg-[#074D7B] transition-colors duration-300"
               >
                 Send Message
               </button>
