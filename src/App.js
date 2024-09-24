@@ -29,8 +29,6 @@ function App() {
             <Route path="/export-trade" element={<ExportTrade />} />
             <Route path="/agriculture" element={<Agriculture />} />
             <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
-            
-
           </Routes>
         </div>
 

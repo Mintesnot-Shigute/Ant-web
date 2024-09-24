@@ -95,8 +95,8 @@ function Home() {
       </div>
 
       {/* Services Section */}
-      <div className="text-center mt-12 py-12 bg-gray-50">
-        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 hover:text-gray-600 transition-colors duration-300">Our Services</h3>
+      <div className="text-center mt-12 py-12 bg-gray-50 mb-12">
+        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 hover:text-gray-600 transition-colors duration-300">Business Verticals</h3>
         {/* Services Icons */}
         <div className="flex justify-center space-x-12">
           {/* Pharmaceuticals & Healthcare */}
@@ -151,88 +151,7 @@ function Home() {
         </div>
       </div>
 
-      {/* New Section Below Services */}
-      <div className="py-12 px-6 bg-gray-100">
-        <h3 className="text-3xl font-semibold text-[#0E74A4] mb-16 text-center hover:text-gray-600 transition-colors duration-300">Our Commitment</h3>
-        <div className="max-w-7xl mx-auto text-gray-600 text-base">
-          {[
-            {
-              title: "Quality Control",
-              items: [
-                "Rigorous quality testing and certification processes",
-                "Implementation of quality assurance protocols to ensure product consistency and safety",
-                "Traceability systems to track products from farm to export",
-              ],
-            },
-            {
-              title: "Logistics and Export",
-              items: [
-                "Efficient supply chain management and logistics coordination",
-                "Handling of export documentation and regulatory compliance",
-                "Coordination with shipping and freight companies for timely delivery",
-                "Warehousing and inventory management",
-              ],
-            },
-            {
-              title: "Market Research and Development",
-              items: [
-                "Market analysis and identification of potential export markets",
-                "Development of marketing strategies to promote products internationally",
-                "Participation in trade shows and international exhibitions",
-                "Building and maintaining relationships with international buyers",
-              ],
-            },
-            {
-              title: "Consultation and Advisory",
-              items: [
-                "Advisory services for farmers and cooperatives on best agricultural practices",
-                "Training programs for improving product quality and yield",
-                "Guidance on international trade regulations and export procedures",
-                "Support in obtaining necessary certifications (e.g., organic, fair trade)",
-              ],
-            },
-            {
-              title: "Sustainability and Social Responsibility",
-              items: [
-                "Implementation of sustainable farming practices",
-                "Support for community development projects",
-                "Ensuring fair trade and ethical sourcing practices",
-                "Promoting environmental conservation and biodiversity",
-              ],
-            },
-          ].map(({ title, items }, index) => (
-            <div key={index} className="mb-6">
-                                  <h4
-                    className="text-lg font-bold text-[#0E74A4] mb-4 p-2 hover:scale-90 transition-transform"
-                    style={{
-                      backgroundImage: `repeating-linear-gradient(
-                        120deg,
-                        rgba(0, 0, 0, 0.05),
-                        rgba(0, 0, 0, 0.05) 10px,
-                        transparent 55px,
-                        transparent 20px
-                      )`,
-                      maxWidth: '50%', // Limit the background width to half of the screen
-                      
-                    }}
-                  >
-                    {title}
-                  </h4>
 
-              <ul className="list-disc pl-5">
-                {items.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className="mb-1 transition-colors duration-300 hover:text-[#0E74A4] "
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
 
     </div>
   );

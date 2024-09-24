@@ -3,7 +3,7 @@ import React from 'react';
 function AboutUs() {
   return (
     <div className="container mx-auto py-12 px-6">
-      <h1 className="text-4xl font-bold text-center mb-8 text-[#0E74A4]">About Us</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-[#0E74A4]">Who We Are</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div className="flex flex-col justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -62,8 +62,10 @@ function AboutUs() {
 {/* Governance and Number of Employees Section */}
 <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-md p-6 mt-12">
         <div className="flex-1 mb-6 md:mr-6">
-          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center">Governance</h2>
-          <p className="text-lg text-gray-700 mb-4">
+          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center hover:text-gray-600 transition-colors duration-300">Governance</h2>
+          <p className="text-lg text-gray-700 mb-4"
+       
+          >
             The company is governed by a Board of Directors (BoD) chaired by an 
             Executive Chairman, providing strategic oversight and governance. The 
             CEO, reporting directly to the Board, leads the operational execution and is 
@@ -77,7 +79,7 @@ function AboutUs() {
             across the business sectors.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center">Number of Employees</h2>
+          <h2 className="text-2xl font-bold mb-4 text-[#0E74A4] text-center hover:text-gray-600 transition-colors duration-300">Number of Employees</h2>
           <p className="text-lg text-gray-700">
             Initially 40 employees, with ambition to create job opportunities for over 
             2,000 employees as all subsidiaries become functional.
