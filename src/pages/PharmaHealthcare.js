@@ -27,89 +27,44 @@ function PharmaHealthcare() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Essential Pharmaceuticals Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-36">
-            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4] ">Essential Pharmaceuticals</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Antibiotics</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Pain relievers</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Vaccines</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Cardiovascular medications</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Diabetes medications</span>
-              </li>
+            <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Essential Pharmaceuticals</h4>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Antibiotics</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Pain relievers</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Vaccines</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Cardiovascular medications</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Diabetes medications</li>
             </ul>
           </div>
 
           {/* Specialty Pharmaceuticals Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Specialty Pharmaceuticals</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Oncology drugs</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Biologics</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Personalized medicine formulations</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Rare disease treatments</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Oncology drugs</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Biologics</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Personalized medicine formulations</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Rare disease treatments</li>
             </ul>
           </div>
 
           {/* Diagnostics Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-36">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Diagnostics</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Test kits for various diseases</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Laboratory supplies</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Health monitoring devices</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Test kits for various diseases</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Laboratory supplies</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Health monitoring devices</li>
             </ul>
           </div>
 
           {/* Medical Equipment Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Medical Equipment</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Surgical instruments</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Patient monitoring systems</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Personal protective equipment (PPE)</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Surgical instruments</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Patient monitoring systems</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Personal protective equipment (PPE)</li>
             </ul>
           </div>
         </div>
@@ -117,6 +72,8 @@ function PharmaHealthcare() {
 
       {/* Services Section */}
       <div id="services" className="mb-12">
+      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare Services</h2>
+
         <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Services</h3>
         <div className="flex justify-center mb-8">
           <img 
@@ -137,76 +94,40 @@ function PharmaHealthcare() {
           {/* Import and Distribution Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-36">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Import and Distribution</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Sourcing of high-quality pharmaceuticals</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Efficient logistics management</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Regulatory compliance handling</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Sourcing of high-quality pharmaceuticals</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Efficient logistics management</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Regulatory compliance handling</li>
             </ul>
           </div>
 
           {/* Manufacturing Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Manufacturing</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Production of essential drugs</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Quality assurance protocols</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Research and development initiatives</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Production of essential drugs</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Quality assurance protocols</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Research and development initiatives</li>
             </ul>
           </div>
 
           {/* Diagnostic Services Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 ml-36">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Diagnostic Services</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Comprehensive lab testing</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Expert consultations</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Health monitoring services</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Comprehensive lab testing</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Expert consultations</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Health monitoring services</li>
             </ul>
           </div>
 
           {/* Consultation Section */}
           <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
             <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Consultation</h4>
-            <ul className="list-disc list-inside space-y-2 mb-4 text-gray-600 pl-6">
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Healthcare system navigation</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Personalized health strategies</span>
-              </li>
-              <li className="flex items-center">
-                <span className="w-3 h-3 bg-[#0E74A4] rounded-full mr-2"></span>
-                <span>Medication management</span>
-              </li>
+            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Healthcare system navigation</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Personalized health strategies</li>
+              <li className="mb-1" style={{ listStyleType: 'square' }}>Medication management</li>
             </ul>
           </div>
         </div>
