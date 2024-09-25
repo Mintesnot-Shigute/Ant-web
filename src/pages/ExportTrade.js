@@ -45,12 +45,13 @@ function ExportTrade() {
           </div>
         </div>
       </div>
-
-      <h3 className="text-4xl font-semibold text-[#0E74A4] text-center mt-16 mb-16 hover:text-gray-600 transition-colors duration-300" id="services">Our Services</h3>
+      <h2 className="text-5xl font-bold text-center text-[#1B3855] mt-16 " id="services">Export Trade Services</h2>
+      <h3 className="text-4xl font-semibold text-[#0E74A4] text-center mt-8 mb-16 hover:text-gray-600 transition-colors duration-300" >Our Services</h3>
 
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full px-4">
           {/* Service Column 1 */}
+          
           <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105">
             <img src="/Sourcing.jpg" alt="Sourcing and Procurement" className="w-full h-48 object-cover" />
             <div className="p-4">
