@@ -48,7 +48,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="block text-[#0E74A4]"
           >
-            Bole Road, African Avenue, Bole Rwanda
+            Addis Ketema, Wereda :05, H.No:261/41 ,Near addis Micheal church.
           </a>
         </div>
 

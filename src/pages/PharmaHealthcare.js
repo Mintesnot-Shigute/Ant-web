@@ -3,7 +3,7 @@ import React from 'react';
 function PharmaHealthcare() {
   return (
     <div id="products" className="container mx-auto py-12">
-      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare Products</h2>
+      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare</h2>
 
       {/* Products Section */}
       <div className="mb-12">
@@ -72,7 +72,7 @@ function PharmaHealthcare() {
 
       {/* Services Section */}
       <div id="services" className="mb-12">
-      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare Services</h2>
+      <h2 className="text-5xl font-bold text-center mb-12 text-[#1B3855]">Pharmaceuticals & Healthcare</h2>
 
         <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Services</h3>
         <div className="flex justify-center mb-8">
