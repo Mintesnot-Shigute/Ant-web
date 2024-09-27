@@ -6,7 +6,7 @@ function ExportTradeProduct() {
       <div className="max-w-6xl w-full px-4">
         {/* Heading for Export Trade Products Section */}
         <h2 className="text-5xl font-bold text-center mb-8 mt-8 text-[#1B3855]">
-          Export Trade Products
+          Export Trade
         </h2>
         
         {/* Subheading for Products */}
