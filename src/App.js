@@ -6,9 +6,12 @@ import './App.css'; // Custom CSS for Navbar and Footer
 import './index.css'; // Tailwind CSS styles
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
-import PharmaHealthcare from './pages/PharmaHealthcare';
-import ExportTrade from './pages/ExportTrade';
-import Agriculture from './pages/Agriculture';
+import PharmaProduct from './pages/PharmaProduct';
+import PharmaService from './pages/PharmaService';
+import ExportTradeProduct from './pages/ExportTradeProduct';
+import ExportTradeService from './pages/ExportTradeService';
+import AgricultureProduct from './pages/AgricultureProduct';
+import AgricultureService from './pages/AgricultureService';
 import Home from './pages/Home';  // Import the new Home page
 import WhyWorkWithUs from './pages/WhyWorkWithUs';  // Import the new Home page
 
@@ -25,9 +28,12 @@ function App() {
             <Route path="/" element={<Home />} /> {/* Home page route */}
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/pharma-healthcare" element={<PharmaHealthcare />} />
-            <Route path="/export-trade" element={<ExportTrade />} />
-            <Route path="/agriculture" element={<Agriculture />} />
+            <Route path="/pharma-product" element={<PharmaProduct />} />
+            <Route path="/pharma-service" element={<PharmaService />} />
+            <Route path="/export-trade-product" element={<ExportTradeProduct />} />
+            <Route path="/export-trade-service" element={<ExportTradeService />} />
+            <Route path="/agricultureproduct" element={<AgricultureProduct />} />
+            <Route path="/agricultureservice" element={<AgricultureService />} />
             <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
           </Routes>
         </div>

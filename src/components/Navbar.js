@@ -73,22 +73,22 @@ function Navbar() {
               <div className="category">
                 <Link to="#" className="dropdown-link">Pharmaceuticals & Healthcare</Link>
                 <div className="sub-dropdown">
-                  <Link to="/pharma-healthcare#products" className="sub-dropdown-link">Products</Link>
-                  <Link to="/pharma-healthcare#services" className="sub-dropdown-link">Services</Link>
+                  <Link to="/pharma-product" className="sub-dropdown-link">Products</Link>
+                  <Link to="/pharma-service" className="sub-dropdown-link">Services</Link>
                 </div>
               </div>
               <div className="category">
                 <Link to="#" className="dropdown-link">Export Trade</Link>
                 <div className="sub-dropdown">
-                  <Link to="/export-trade#products" className="sub-dropdown-link">Products</Link>
-                  <Link to="/export-trade#services" className="sub-dropdown-link">Services</Link>
+                  <Link to="/export-trade-product" className="sub-dropdown-link">Products</Link>
+                  <Link to="/export-trade-service" className="sub-dropdown-link">Services</Link>
                 </div>
               </div>
               <div className="category">
                 <Link to="#" className="dropdown-link">Agriculture & Food Processing</Link>
                 <div className="sub-dropdown">
-                  <Link to="/agriculture#products" className="sub-dropdown-link">Products</Link>
-                  <Link to="/agriculture#services" className="sub-dropdown-link">Services</Link>
+                  <Link to="/agricultureproduct" className="sub-dropdown-link">Products</Link>
+                  <Link to="/agricultureservice" className="sub-dropdown-link">Services</Link>
                 </div>
               </div>
             </div>
