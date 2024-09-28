@@ -42,10 +42,8 @@ function Contact() {
         {/* Visit Us */}
         <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">VISIT US</h2>
-        <p className="block text-[#0E74A4] flex justify-center items-center"> Addis Ketema, Wereda :05, H.No:261/41 ,Near addis Micheal church.</p>
-
-
-          
+        <p className="block text-[#0E74A4] flex justify-center items-center">
+           Addis Ketema, Wereda :05, H.No:261/41 ,Near addis Micheal church.</p>
         </div>
 
         {/* Chat With Us */}

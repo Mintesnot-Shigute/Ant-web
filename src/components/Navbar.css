@@ -17,10 +17,11 @@ html {
 }
 
 /* Logo */
-.logo {
-  width: 90px;
+.navbar img {
+  width: 160px;
   height: auto;
-  margin-right: 1rem;
+  margin-left: 10rem;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
 }
 
 .flex {
@@ -29,8 +30,8 @@ html {
   justify-content: space-between;
 }
 
-.space-x-6 > :not(:last-child) {
-  margin-right: 1.5rem;
+.space-x-4 > :not(:last-child) {
+  margin-right: 1rem;
 }
 
 /* Navigation Links */
@@ -44,7 +45,34 @@ html {
 
 .nav-link:hover {
   color: #0E74A4;
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Products & Services Dropdown */
@@ -60,7 +88,8 @@ html {
   z-index: 200;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+  transform: translateY(10px); /* Dropdown starts slightly below */
 }
 
 .group:hover .products-services-dropdown,
@@ -68,6 +97,7 @@ html {
   display: block;
   opacity: 1;
   visibility: visible;
+  transform: translateY(0); /* Dropdown moves into place */
 }
 
 /* Category Styling */
@@ -101,13 +131,15 @@ html {
   border-radius: 8px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+  transform: translateX(10px); /* Sub-dropdown appears from the right */
 }
 
 .category:hover .sub-dropdown {
   display: block;
   opacity: 1;
   visibility: visible;
+  transform: translateX(0); /* Sub-dropdown slides into place */
 }
 
 .sub-dropdown-link {
@@ -124,13 +156,12 @@ html {
   padding-left: 1.5rem;
 }
 
-/* About Dropdown */
+/* About Us Dropdown */
 .aboutdropdown {
   display: none;
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 180px;
   background-color: #1B3855;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -138,13 +169,15 @@ html {
   z-index: 100;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+  transform: translateY(10px);
 }
 
 .relative:hover .aboutdropdown {
   display: block;
   opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
 .aboutdropdown-link {
@@ -159,4 +192,92 @@ html {
 .aboutdropdown-link:hover {
   background-color: rgba(255, 255, 255, 0.15);
   padding-left: 1.5rem;
+}
+
+/* Mobile & Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  /* Hamburger icon for smaller screens */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide menu initially for smaller screens */
+  ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1B3855;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  /* Show menu when active */
+  ul.active {
+    display: flex;
+    animation: slide-in 0.3s ease-in-out forwards;
+  }
+
+  /* Dropdowns adjusted for mobile */
+  .products-services-dropdown, .aboutdropdown {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .category, .aboutdropdown-link, .dropdown-link, .sub-dropdown-link {
+    padding: 1rem;
+  }
+
+  .sub-dropdown {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+/* Animation for sliding menu on mobile */
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+    position: left;
+  }
+
+  /* Adjust logo size on smaller screens */
+  .navbar img {
+    width: 70px;
+  }
+
+  /* Adjust padding and layout */
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  ul {
+    padding: 0;
+  }
 }

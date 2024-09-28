@@ -45,11 +45,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link to="/" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Home</Link></li>
-              <li><Link to="/pharma-healthcare" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Pharmaceuticals & Healthcare</Link></li>
-              <li><Link to="/export-trade" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Export Trade</Link></li>
-              <li><Link to="/agriculture" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Agriculture & Food Processing</Link></li>
               <li><Link to="/about-us" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Who We Are</Link></li>
               <li><Link to="/contact" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Contact</Link></li>
+              <li><Link to="/why-work-with-us" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Why Work With Us</Link></li>
             </ul>
           </div>
 
@@ -58,8 +56,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">LinkedIn</a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Facebook</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Twitter</a>
+              <a href="https://wa.me/+251911213682" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">WhatsApp</a>
+              <a href="https://telegram.me/+251911220634" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Telegram</a>
             </div>
           </div>
         </div>

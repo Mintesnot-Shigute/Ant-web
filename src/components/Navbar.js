@@ -53,7 +53,7 @@ function Navbar() {
           {/* About Us Dropdown */}
           <li className="relative group">
             <Link to="#" className="nav-link mr-16">About Us</Link>
-            <div className="aboutdropdown">
+            <div className={`aboutdropdown ${menuActive ? 'block' : 'hidden'}`}>
               <Link to="/about-us" className="aboutdropdown-link">Who We Are</Link>
               <Link to="/why-work-with-us" className="aboutdropdown-link">Why Work With Us</Link>
               <a
@@ -69,7 +69,7 @@ function Navbar() {
           {/* Products & Services Dropdown */}
           <li className="relative group">
             <Link to="#" className="nav-link mr-16">Products & Services</Link>
-            <div className="products-services-dropdown">
+            <div className={`products-services-dropdown ${menuActive ? 'block' : 'hidden'}`}>
               <div className="category">
                 <Link to="#" className="dropdown-link">Pharmaceuticals & Healthcare</Link>
                 <div className="sub-dropdown">
