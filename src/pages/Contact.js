@@ -1,12 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaTelegram, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   // Scroll to top when the component loads
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Ref for the form
+  const form = useRef();
+
+  // Function to handle form submission
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_jlnx9nm', // Replace with your EmailJS service ID
+        'template_frcp4yq', // Replace with your EmailJS template ID
+        form.current, // Use the form ref
+        '0uHawFA-K23jSI-RF' // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          alert('Failed to send message. Please try again later.');
+        }
+      );
+    e.target.reset(); // Reset form after submission
+  };
 
   return (
     <div className="container mx-auto py-12 px-6">
@@ -42,8 +68,9 @@ function Contact() {
         {/* Visit Us */}
         <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">VISIT US</h2>
-        <p className="block text-[#0E74A4] flex justify-center items-center">
-           Addis Ketema, Wereda :05, H.No:261/41 ,Near addis Micheal church.</p>
+          <p className="block text-[#0E74A4] flex justify-center items-center">
+            Addis Ketema, Wereda :05, H.No:261/41, Near Addis Michael Church.
+          </p>
         </div>
 
         {/* Chat With Us */}
@@ -100,50 +127,49 @@ function Contact() {
       {/* Main Content: Map on the left and Form on the right */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 items-start">
         {/* Google Map Embed */}
-                <div className="w-full">
+        <div className="w-full">
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.475850291147!2d38.7284555!3d9.0407886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b856121d3fd1d3%3A0x420751d979ff32c8!2s9%C2%B002%2726.8%22N%2038%C2%B043%2751.7%22E!5e0!3m2!1sen!2set!4v1695671298210!5m2!1sen!2set"
             width="100%"
-            height="600" // Increased height
+            height="600"
             allowFullScreen=""
             loading="lazy"
             className="border-0 rounded-lg shadow-lg"
           ></iframe>
         </div>
 
-
         {/* Contact Form */}
         <div className="w-full bg-gray-100 p-11 rounded-lg shadow-md hover:scale-105 transition-transform">
-          <h2 className="text-2xl font-semibold text-center 4">Send Us a Message</h2>
-          <form className="space-y-4">
+          <h2 className="text-2xl font-semibold text-center">Send Us a Message</h2>
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
             {/* Email Field */}
             <div>
-              <label htmlFor="email" className="block text-lg font-medium text-gray-700 p-2 ">Email</label>
+              <label htmlFor="email" className="block text-lg font-medium text-gray-700 p-2">Name</label>
               <input
-                type="email"
-                id="email"
-                name="email"
+                type="text"
+                id="text"
+                name="user_name"
                 required
                 className="mt-1 block w-full p-2 border-gray-300 rounded-lg shadow-sm focus:ring-[#0E74A4] focus:border-[#0E74A4]"
-                placeholder="Enter your email"
+                placeholder="Enter your Name"
               />
             </div>
 
             {/* Subject Field */}
             <div>
-              <label htmlFor="subject" className="block text-lg font-medium text-gray-700 p-2">Subject</label>
+              <label htmlFor="subject" className="block text-lg font-medium text-gray-700 p-2">Email</label>
               <input
-                type="text"
-                id="subject"
-                name="subject"
+                type="email"
+                id="email"
+                name="user_email"
                 required
                 className="mt-1 block w-full p-2 border-gray-300 rounded-lg shadow-sm focus:ring-[#0E74A4] focus:border-[#0E74A4]"
-                placeholder="Enter subject"
+                placeholder="Enter Email"
               />
             </div>
 
-            {/* Comment/Message Field */}
+            {/* Message Field */}
             <div>
               <label htmlFor="message" className="block text-lg font-medium text-gray-700 p-2">Comment/Message</label>
               <textarea
@@ -160,7 +186,7 @@ function Contact() {
             <div className="text-center">
               <button
                 type="submit"
-                className="mt-6 px-10 py-3 bg-[#0E74A4] text-white rounded-lg shadow hover:bg-[#074D7B] transition-colors duration-300"
+                className="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-lg font-medium rounded-md text-white bg-[#0E74A4] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0E74A4] transition-transform"
               >
                 Send Message
               </button>

@@ -14,9 +14,7 @@ const WhyWorkWithUs = () => {
 </h1>
 
 
-        <p className="text-xl text-gray-600 mt-4">
-          ANT General Trading and Industries Holding is deeply committed to transforming lives and inspiring futures through innovative, holistic solutions in pharmaceuticals and healthcare, export trade, agriculture, and food processing.
-        </p>
+      
       </div>
 
       <div className="max-w-5xl mx-auto">

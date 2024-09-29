@@ -30,10 +30,10 @@ const Footer = () => {
           <div className="mb-6 lg:mb-0 ml-16">
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <p className="mb-2">
-              <a href="tel:+251992454545" className="hover:text-[#0E74A4]">+251-992-45-45-45</a>
+              <a href="tel:+251911213682" className="hover:text-[#0E74A4]">+251-911-21-36-82</a>
             </p>
             <p className="mb-2">
-              <a href="tel:+251996797979" className="hover:text-[#0E74A4]">+251-996-79-79-79</a>
+              <a href="tel:+251911220634" className="hover:text-[#0E74A4]">+251-911-22-06-34</a>
             </p>
             <p className="mb-2">
               <a href="mailto:info@ANT-holding.com.et" className="hover:text-[#0E74A4]">info@ANT-holding.com.et</a>
@@ -68,8 +68,8 @@ const Footer = () => {
           <div className="text-sm mb-2 md:mb-0 text-center w-full text-white flex items-center justify-center ">
             &copy; 2024 ANT General Trading and Industries Holding. All Rights Reserved.
             <div className="flex text-sm ml-14">
-              <Link to="/" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Service </Link> | 
-              <Link to="/" onClick={handleScrollToTop} className="hover:text-[#0E74A4] ml-2">Privacy Policy</Link>
+              <Link to="/terms" onClick={handleScrollToTop} className="hover:text-[#0E74A4]">Terms of Use </Link> | 
+              <Link to="/privacy" onClick={handleScrollToTop} className="hover:text-[#0E74A4] ml-2">Privacy Policy</Link>
             </div>
           </div>
         </div>

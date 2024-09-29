@@ -14,6 +14,8 @@ import AgricultureProduct from './pages/AgricultureProduct';
 import AgricultureService from './pages/AgricultureService';
 import Home from './pages/Home';  // Import the new Home page
 import WhyWorkWithUs from './pages/WhyWorkWithUs';  // Import the new Home page
+import TermsOfUse from './pages/TermOfUse';  // Import the new TermsOfUse page
+import PrivacyPolicy from './pages/PrivacyPolicy';  // Import the new PrivacyPolicy page
 
 
 function App() {
@@ -35,6 +37,10 @@ function App() {
             <Route path="/agricultureproduct" element={<AgricultureProduct />} />
             <Route path="/agricultureservice" element={<AgricultureService />} />
             <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
+            <Route path="/terms" element={<TermsOfUse />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+
+
           </Routes>
         </div>
 
