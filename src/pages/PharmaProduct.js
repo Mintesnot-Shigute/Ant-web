@@ -26,47 +26,74 @@ function PharmaProduct() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Essential Pharmaceuticals Section */}
-          <div className="bg-white rounded-lg p-4 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-xl md:text-2xl font-semibold mb-2 text-[#0E74A4]">Essential Pharmaceuticals</h4>
-            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Antibiotics</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Pain relievers</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Vaccines</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Cardiovascular medications</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Diabetes medications</li>
-            </ul>
-          </div>
+          <div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 sm:ml-40">
+  <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Essential Pharmaceuticals</h4>
+  <div className="space-y-1"> {/* Space between items */}
+    {[
+      'Antibiotics',
+      'Pain relievers',
+      'Vaccines',
+      'Cardiovascular medications',
+      'Diabetes medications',
+    ].map((item, index) => (
+      <div key={index} className="mb-1">
+        <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Dot indicator */}
+        <span className="text-lg text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+      </div>
+    ))}
+  </div>
+</div>
+{/* Specialty Pharmaceuticals Section */}
+<div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
+  <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Specialty Pharmaceuticals</h4>
+  <div className="space-y-1"> {/* Space between items */}
+    {[
+      'Oncology drugs',
+      'Biologics',
+      'Personalized medicine formulations',
+      'Rare disease treatments',
+    ].map((item, index) => (
+      <div key={index} className="mb-1"> {/* Align items horizontally */}
+        <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+        <span className="text-lg text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+      </div>
+    ))}
+  </div>
+</div>
 
-          {/* Specialty Pharmaceuticals Section */}
-          <div className="bg-white rounded-lg p-4 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-xl md:text-2xl font-semibold mb-2 text-[#0E74A4]">Specialty Pharmaceuticals</h4>
-            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Oncology drugs</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Biologics</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Personalized medicine formulations</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Rare disease treatments</li>
-            </ul>
-          </div>
+{/* Diagnostics Section */}
+<div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105 sm:ml-40">
+  <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Diagnostics</h4>
+  <div className="space-y-1"> {/* Space between items */}
+    {[
+      'Test kits for various diseases',
+      'Laboratory supplies',
+      'Health monitoring devices',
+    ].map((item, index) => (
+      <div key={index} className="mb-1"> {/* Align items horizontally */}
+        <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+        <span className="text-lg text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+      </div>
+    ))}
+  </div>
+</div>
 
-          {/* Diagnostics Section */}
-          <div className="bg-white rounded-lg p-4 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-xl md:text-2xl font-semibold mb-2 text-[#0E74A4]">Diagnostics</h4>
-            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Test kits for various diseases</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Laboratory supplies</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Health monitoring devices</li>
-            </ul>
-          </div>
-
-          {/* Medical Equipment Section */}
-          <div className="bg-white rounded-lg p-4 transition-transform duration-300 hover:scale-105">
-            <h4 className="text-xl md:text-2xl font-semibold mb-2 text-[#0E74A4]">Medical Equipment</h4>
-            <ul className="list-none pl-5 list-inside text-gray-700 space-y-1">
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Surgical instruments</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Patient monitoring systems</li>
-              <li className="mb-1" style={{ listStyleType: 'square' }}>Personal protective equipment (PPE)</li>
-            </ul>
-          </div>
+{/* Medical Equipment Section */}
+<div className="bg-white rounded-lg p-6 transition-transform duration-300 hover:scale-105">
+  <h4 className="text-2xl font-semibold mb-4 text-[#0E74A4]">Medical Equipment</h4>
+  <div className="space-y-1"> {/* Space between items */}
+    {[
+      'Surgical instruments',
+      'Patient monitoring systems',
+      'Personal protective equipment (PPE)',
+    ].map((item, index) => (
+      <div key={index} className="mb-1"> {/* Align items horizontally */}
+      <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+      <span className="text-lg text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+    </div>
+    ))}
+  </div>
+</div>
         </div>
       </div>
     </div>

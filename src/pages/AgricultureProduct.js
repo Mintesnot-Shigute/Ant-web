@@ -11,61 +11,82 @@ function AgricultureProduct() {
         <h3 className="text-3xl font-semibold text-center mb-14 text-[#0E74A4] hover:text-gray-600 transition-colors duration-300">Our Products</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {/* Agriculture Products */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
-            <img src="/Agriculture.jpg" alt="Agriculture Products" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-bold text-[#0E74A4] mb-4">AGRICULTURE</h3>
-              <ul className="list-none list-inside text-gray-700 space-y-1">
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Seeds (hybrid, organic, and conventional)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Pesticides and herbicides</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Agricultural machinery and equipment (tractors, plows, harvesters)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Irrigation systems and supplies (drip irrigation, sprinklers)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Soil health products (compost, soil conditioners)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Greenhouse materials and equipment</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Crop protection products (netting, mulching films)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Animal feed and supplements</li>
-              </ul>
-            </div>
-          </div>
+{/* Agriculture Products */}
+<div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
+  <img src="/Agriculture.jpg" alt="Agriculture Products" className="w-full h-48 object-cover" />
+  <div className="p-4">
+    <h3 className="text-lg sm:text-xl font-bold text-[#0E74A4] mb-3">AGRICULTURE</h3>
+    <div className="space-y-1"> {/* Space between items */}
+      {[
+        'Seeds (hybrid, organic, and conventional)',
+        'Pesticides and herbicides',
+        'Agricultural machinery and equipment',
+        'Irrigation systems and supplies',
+        'Soil health products',
+        'Greenhouse materials and equipment',
+        'Crop protection products',
+        'Animal feed and supplements',
+      ].map((item, index) => (
+        <div key={index} className="mb-1"> {/* Align items horizontally */}
+          <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+          <span className="text-sm sm:text-base text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
-          {/* Poultry Products */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
-            <img src="/Poultry.jpg" alt="Poultry Products" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-bold text-[#0E74A4] mb-4">POULTRY</h3>
-              <ul className="list-none list-inside text-gray-700 space-y-1">
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Day-old chicks (broilers, layers)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Poultry feed (starter, grower, finisher)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Poultry vitamins and supplements</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Incubators and hatchery equipment</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Brooding equipment (heaters, brooders)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Poultry housing systems (cages, coops)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Egg packaging materials</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Processed poultry products (frozen chicken, chicken parts)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Poultry health products (vaccines, medications)</li>
-              </ul>
-            </div>
-          </div>
+{/* Poultry Products */}
+<div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
+  <img src="/Poultry.jpg" alt="Poultry Products" className="w-full h-48 object-cover" />
+  <div className="p-4">
+    <h3 className="text-lg sm:text-xl font-bold text-[#0E74A4] mb-3">POULTRY</h3>
+    <div className="space-y-1"> {/* Space between items */}
+      {[
+        'Day-old chicks',
+        'Poultry feed',
+        'Poultry vitamins and supplements',
+        'Incubators and hatchery equipment',
+        'Brooding equipment',
+        'Poultry housing systems',
+        'Egg packaging materials',
+        'Processed poultry products',
+        'Poultry health products',
+      ].map((item, index) => (
+        <div key={index} className="mb-1"> {/* Align items horizontally */}
+          <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+          <span className="text-sm sm:text-base text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
-          {/* Food Processing Products */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
-            <img src="/FoodProcessing.jpg" alt="Food Processing Products" className="w-full h-48 object-cover" />
-            <div className="p-4">
-              <h3 className="text-xl font-bold text-[#0E74A4] mb-4">FOOD PROCESSING</h3>
-              <ul className="list-none list-inside text-gray-700 space-y-1">
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Processed grains (flour, rice, maize meal)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Dairy products (milk, cheese, yogurt, butter)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Processed fruits and vegetables (canned, dried, frozen)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Meat products (sausages, canned meat, deli meats)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Snack foods (chips, nuts, dried fruits)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Beverages (juices, soft drinks, bottled water)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Bakery products (bread, pastries, cakes)</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Ready-to-eat meals and convenience foods</li>
-                <li className="mb-1" style={{ listStyleType: 'square' }}>Food packaging materials and supplies</li>
-              </ul>
-            </div>
-          </div>
+{/* Food Processing Products */}
+<div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 max-w-sm mx-auto">
+  <img src="/FoodProcessing.jpg" alt="Food Processing Products" className="w-full h-48 object-cover" />
+  <div className="p-4">
+    <h3 className="text-lg sm:text-xl font-bold text-[#0E74A4] mb-3">FOOD PROCESSING</h3>
+    <div className="space-y-1"> {/* Space between items */}
+      {[
+        'Processed grains',
+        'Dairy products',
+        'Processed fruits and vegetables',
+        'Meat products',
+        'Snack foods',
+        'Beverages',
+        'Bakery products',
+        'Ready-to-eat meals',
+        'Food packaging materials',
+      ].map((item, index) => (
+        <div key={index} className="mb-1"> {/* Align items horizontally */}
+          <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2"></span> {/* Circle dot indicator */}
+          <span className="text-sm sm:text-base text-gray-700 inline align-middle">{item}</span> {/* Item text */}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>

@@ -18,10 +18,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        'service_jlnx9nm', // Replace with your EmailJS service ID
-        'template_frcp4yq', // Replace with your EmailJS template ID
+        'service_9tokc7a', // Replace with your EmailJS service ID
+        'template_jutap89', // Replace with your EmailJS template ID
         form.current, // Use the form ref
-        '0uHawFA-K23jSI-RF' // Replace with your EmailJS user ID
+        'xpdDt_zx8Q9w1YBwZ' // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
