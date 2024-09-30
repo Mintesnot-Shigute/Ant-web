@@ -63,7 +63,7 @@ function Navbar() {
 
   return (
     <nav className="navbar bg-white">
-      <div className="flex justify-between items-center p-4">
+      <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
@@ -89,7 +89,7 @@ function Navbar() {
         <ul className={`flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 py-2 sm:flex transition-transform duration-300 ${menuActive ? 'flex' : 'hidden'} sm:space-x-4`}>
           {/* Home */}
           <li className="relative">
-            <Link to="/" className="nav-link mr-16" onClick={closeMenu}>Home</Link>
+            <Link to="/" className="nav-link mr-24" onClick={closeMenu}>Home</Link>
           </li>
 
           {/* About Us Dropdown */}
@@ -98,7 +98,7 @@ function Navbar() {
             onMouseEnter={() => handleMouseEnter('aboutUs')}
             onMouseLeave={() => handleMouseLeave('aboutUs')}
           >
-            <Link to="#" className="nav-link mr-16" onClick={() => toggleDropdown('aboutUs')}>About Us</Link>
+            <Link to="#" className="nav-link mr-24" onClick={() => toggleDropdown('aboutUs')}>About Us</Link>
             {(dropdownOpen.aboutUs || dropdownOpen.productsServices) && (
               <div className="aboutdropdown">
                 <Link to="/about-us" className="aboutdropdown-link" onClick={closeMenu}>Who We Are</Link>
@@ -121,7 +121,7 @@ function Navbar() {
             onMouseEnter={() => handleMouseEnter('productsServices')}
             onMouseLeave={() => handleMouseLeave('productsServices')}
           >
-            <Link to="#" className="nav-link mr-16" onClick={() => toggleDropdown('productsServices')}>Products & Services</Link>
+            <Link to="#" className="nav-link mr-24" onClick={() => toggleDropdown('productsServices')}>Products & Services</Link>
             {dropdownOpen.productsServices && (
               <div className="products-services-dropdown">
                 <div className="category" onMouseEnter={() => handleMouseEnter('pharmaDropdown')} onMouseLeave={() => handleMouseLeave('pharmaDropdown')}>
@@ -157,7 +157,7 @@ function Navbar() {
 
           {/* Contact */}
           <li>
-            <Link to="/contact" className="nav-link mr-16" onClick={closeMenu}>Contact</Link>
+            <Link to="/contact" className="nav-link mr-24" onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       </div>

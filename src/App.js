@@ -14,15 +14,14 @@ import AgricultureProduct from './pages/AgricultureProduct';
 import AgricultureService from './pages/AgricultureService';
 import Home from './pages/Home';  // Import the new Home page
 import WhyWorkWithUs from './pages/WhyWorkWithUs';  // Import the new Home page
-<<<<<<< HEAD
 import TermsOfUse from './pages/TermOfUse';  // Import the new TermsOfUse page
 import PrivacyPolicy from './pages/PrivacyPolicy';  // Import the new PrivacyPolicy page
 
-=======
+
 import Agriculture from './pages/Agriculture';
 import ExportTrade from './pages/ExportTrade';
 import PharmaHealthcare from './pages/PharmaHealthcare';
->>>>>>> f18fc1d9f7cdc4e2e29a810cf8655284feb95228
+
 
 function App() {
   return (
@@ -43,16 +42,11 @@ function App() {
             <Route path="/agricultureproduct" element={<AgricultureProduct />} />
             <Route path="/agricultureservice" element={<AgricultureService />} />
             <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
-<<<<<<< HEAD
-            <Route path="/terms" element={<TermsOfUse />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-
-
-=======
             <Route path="/pharma-healthcare" element={<PharmaHealthcare />} />
             <Route path="/agriculture" element={<Agriculture />} />
             <Route path="/export-trade" element={<ExportTrade />} />
->>>>>>> f18fc1d9f7cdc4e2e29a810cf8655284feb95228
+            <Route path="/terms" element={<TermsOfUse />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </div>
 
