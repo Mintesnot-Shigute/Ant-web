@@ -33,7 +33,7 @@ function Home() {
   return (
     <div className='bg-gray-100'>
       {/* Hero Section with Carousel */}
-      <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+      <div className="relative h-[300px] md:h-[500px] overflow-hidden">
         <div className="absolute inset-0 flex transition-transform duration-1000">
           {images.map((image, index) => (
             <div
@@ -53,7 +53,7 @@ function Home() {
               <img
                 src={image}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover md:h-[500px] h-[300px]" // Ensure proper sizing on mobile
               />
             </div>
           ))}
@@ -71,22 +71,21 @@ function Home() {
       </div>
 
       {/* Slogan Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start mt-12 mb-6 px-4 md:px-6 max-w-7xl mx-auto">
-        <div className="md:w-1/4 mb-4 md:mb-0">
+      <div className="flex flex-col md:flex-row justify-between items-start mt-6 md:mt-12 mb-6 px-4 md:px-6 max-w-7xl mx-auto space-y-4 md:space-y-0">
+        <div className="md:w-1/4">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0E74A4]">
             ANT General Trading and Industries Holding
           </h2>
         </div>
         <div className="md:w-1/2 px-2 md:px-4">
-          <p className="text-gray-600 text-sm md:text-base text-justify mb-4">
+          <p className="text-gray-600 text-sm md:text-base ">
             ANT General Trading and Industries Holding is deeply committed to transforming lives
             and inspiring futures through innovative, holistic solutions in pharmaceuticals and
             healthcare, export trade, agriculture, and food processing.
           </p>
         </div>
-        {/* Second Column Content */}
         <div className="md:w-1/2 px-2 md:px-4">
-          <p className="text-gray-600 text-sm md:text-base text-justify mb-4">
+          <p className="text-gray-600 text-sm md:text-base ">
             With a steadfast dedication to quality, excellence, and sustainability,
             we empower individuals and communities, providing the resources and tools
             they need to thrive.
@@ -95,16 +94,21 @@ function Home() {
       </div>
 
       {/* Services Section */}
-      <div className="text-center mt-12 py-12 bg-gray-50 mb-12">
-        <h3 className="text-2xl md:text-3xl font-semibold text-[#0E74A4] mb-8 hover:text-gray-600 transition-colors duration-300">Business Verticals</h3>
+      <div className="text-center mt-8 md:mt-12 py-12 bg-gray-50">
+        <h3 className="text-2xl md:text-3xl font-semibold text-[#0E74A4] mb-8 hover:text-gray-600 transition-colors duration-300">
+          Business Verticals
+        </h3>
+
         {/* Services Icons */}
-        <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-12 space-y-12 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-center space-x-0 md:space-x-12 space-y-8 md:space-y-0">
           {/* Pharmaceuticals & Healthcare */}
           <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
-              <img src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg"
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
+              <img
+                src="/national-cancer-institute-aelk4Tn0vlI-unsplash.jpg"
                 alt="Pharmaceuticals & Healthcare"
-                className="h-full w-full object-cover" />
+                className="h-full w-full object-cover"
+              />
             </div>
             <h4 className="text-lg md:text-xl font-semibold mb-1">Pharmaceuticals & Healthcare</h4>
             <p className="text-gray-600 mb-2 max-w-xs text-center">
@@ -119,7 +123,7 @@ function Home() {
 
           {/* Export Trade */}
           <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
               <img src="/image4.jpg" alt="Export Trade" className="h-full w-full object-cover" />
             </div>
             <h4 className="text-lg md:text-xl font-semibold mb-1">Export Trade</h4>
@@ -135,7 +139,7 @@ function Home() {
 
           {/* Agriculture & Food Processing */}
           <div className="flex flex-col items-center">
-            <div className="w-24 h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-[#1B3855] rounded-full overflow-hidden flex items-center justify-center shadow-md mb-4 transition-transform transform hover:scale-105">
               <img src="/AgriCollage.jpg" alt="Agriculture & Food Processing" className="h-full w-full object-cover" />
             </div>
             <h4 className="text-lg md:text-xl font-semibold mb-1">Agriculture & Food Processing</h4>
