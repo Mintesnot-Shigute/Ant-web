@@ -14,7 +14,9 @@ import AgricultureProduct from './pages/AgricultureProduct';
 import AgricultureService from './pages/AgricultureService';
 import Home from './pages/Home';  // Import the new Home page
 import WhyWorkWithUs from './pages/WhyWorkWithUs';  // Import the new Home page
-
+import Agriculture from './pages/Agriculture';
+import ExportTrade from './pages/ExportTrade';
+import PharmaHealthcare from './pages/PharmaHealthcare';
 
 function App() {
   return (
@@ -35,6 +37,9 @@ function App() {
             <Route path="/agricultureproduct" element={<AgricultureProduct />} />
             <Route path="/agricultureservice" element={<AgricultureService />} />
             <Route path="/why-work-with-us" element={<WhyWorkWithUs />} />
+            <Route path="/pharma-healthcare" element={<PharmaHealthcare />} />
+            <Route path="/agriculture" element={<Agriculture />} />
+            <Route path="/export-trade" element={<ExportTrade />} />
           </Routes>
         </div>
 

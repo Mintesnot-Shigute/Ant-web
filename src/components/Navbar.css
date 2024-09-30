@@ -48,32 +48,6 @@ html {
   transform: translateY(-2px); /* Lift effect on hover */
 }
 
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 4px;
-  transition: all 0.3s ease;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* Products & Services Dropdown */
 .products-services-dropdown {
@@ -193,91 +167,110 @@ html {
   background-color: rgba(255, 255, 255, 0.15);
   padding-left: 1.5rem;
 }
-
-/* Mobile & Tablet Styles */
-@media screen and (max-width: 1024px) {
+/* General Navbar Styles for Mobile */
+@media (max-width: 768px) {
   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
     padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 2px solid #e0e0e0;
   }
 
-  /* Hamburger icon for smaller screens */
+  /* Logo aligned to the left */
+  .navbar img {
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  /* Hamburger menu aligned to the right */
   .hamburger {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Aligns the hamburger menu to the right corner */
+    top: 3.65rem;
+  }
+  
+  .hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar .flex-col {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 640px) {
+    .hamburger {
+      display: none; /* Hide hamburger on larger screens */
+    }
   }
 
-  /* Hide menu initially for smaller screens */
+  /* Navigation menu hidden initially */
   ul {
     display: none;
     flex-direction: column;
-    background-color: #1B3855;
     position: absolute;
     top: 100%;
-    right: 0;
     left: 0;
-    text-align: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 200;
+    padding: 1rem 0;
   }
 
-  /* Show menu when active */
+  /* Show the navbar when hamburger is clicked */
   ul.active {
     display: flex;
-    animation: slide-in 0.3s ease-in-out forwards;
   }
 
-  /* Dropdowns adjusted for mobile */
-  .products-services-dropdown, .aboutdropdown {
-    position: relative;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-
-  .category, .aboutdropdown-link, .dropdown-link, .sub-dropdown-link {
-    padding: 1rem;
-  }
-
-  .sub-dropdown {
-    position: relative;
-    left: 0;
-    right: 0;
-    width: 100%;
-  }
-}
-
-/* Animation for sliding menu on mobile */
-@keyframes slide-in {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem 1rem;
+  ul li {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   .nav-link {
     font-size: 1rem;
     font-weight: 600;
-    color: #ffffff;
-    transition: color 0.3s, transform 0.3s;
-    position: left;
+    color: #333;
+    text-decoration: none;
+    padding: 0.75rem;
+    display: block;
   }
 
-  /* Adjust logo size on smaller screens */
-  .navbar img {
-    width: 70px;
+  .nav-link:hover {
+    color: #0E74A4;
   }
+}
 
-  /* Adjust padding and layout */
-  .nav-link {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
+/* Hamburger menu toggle functionality */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
-  ul {
-    padding: 0;
-  }
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
