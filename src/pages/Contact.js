@@ -57,11 +57,11 @@ function Contact() {
           <a href="mailto:info@ANT-holding.com.et" className="block mb-2 text-[#0E74A4]">
             info@ANT-holding.com.et
           </a>
-          <a href="tel:+251911213682" className="block mb-1 text-[#0E74A4] flex justify-center items-center">
-            <FaPhoneAlt className="mr-2" /> +251-911-213-682
+          <a href="tel:+251968222220" className="block mb-1 text-[#0E74A4] flex justify-center items-center">
+            <FaPhoneAlt className="mr-2" /> +251-968-22-22-20
           </a>
-          <a href="tel:+251911220634" className="block text-[#0E74A4] flex justify-center items-center">
-            <FaPhoneAlt className="mr-2" /> +251-911-220-634
+          <a href="tel:+251968222221" className="block text-[#0E74A4] flex justify-center items-center">
+            <FaPhoneAlt className="mr-2" /> +251-968-22-22-21
           </a>
         </div>
 
@@ -77,20 +77,20 @@ function Contact() {
         <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">CHAT WITH US</h2>
           <a
-            href="https://wa.me/+251911213682"
+            href="https://wa.me/+251968222220"
             target="_blank"
             rel="noopener noreferrer"
             className="block mb-2 text-[#0E74A4] flex justify-center items-center"
           >
-            <FaWhatsapp className="mr-2" /> WhatsApp: +251-911-213-682
+            <FaWhatsapp className="mr-2" /> WhatsApp: +251-968-22-22-20
           </a>
           <a
-            href="https://telegram.me/+251911220634"
+            href="https://telegram.me/+251968222221"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-[#0E74A4] flex justify-center items-center"
           >
-            <FaTelegram className="mr-2" /> Telegram: +251-911-220-634
+            <FaTelegram className="mr-2" /> Telegram: +251-968-22-22-21
           </a>
         </div>
 

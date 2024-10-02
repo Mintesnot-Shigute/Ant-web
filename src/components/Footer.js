@@ -32,10 +32,10 @@ const Footer = () => {
             <div className="mb-6 lg:mb-0">
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <p className="mb-2">
-                <a href="tel:+251911213682" className="hover:text-[#0E74A4]">+251-911-21-36-82</a>
+                <a href="tel:+251968222220" className="hover:text-[#0E74A4]">+251-968-22-22-20</a>
               </p>
               <p className="mb-2">
-                <a href="tel:+251911220634" className="hover:text-[#0E74A4]">+251-911-22-06-34</a>
+                <a href="tel:+251968222221" className="hover:text-[#0E74A4]">+251-968-22-22-21</a>
               </p>
               <p className="mb-2">
                 <a href="mailto:info@ANT-holding.com.et" className="hover:text-[#0E74A4]">info@ANT-holding.com.et</a>
@@ -58,8 +58,8 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
               <div className="flex justify-center lg:justify-start space-x-4">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">LinkedIn</a>
-                <a href="https://wa.me/+251911213682" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">WhatsApp</a>
-                <a href="https://telegram.me/+251911220634" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Telegram</a>
+                <a href="https://wa.me/+251968222220" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">WhatsApp</a>
+                <a href="https://telegram.me/+251968222221" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-[#0E74A4] hover:underline">Telegram</a>
               </div>
             </div>
           </div>
