@@ -58,13 +58,11 @@ function AboutUs() {
                   'Respect',
                   'Global Vision',
                 ].map((value, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center p-4 bg-gray-100 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:bg-gray-200"
-                  >
-                    <span className="w-3 h-3 bg-[#1B3855] rounded-full mr-2"></span> {/* Smaller dot and reduced margin */}
-                    <span className="text-lg text-gray-700 max-w-xs">{value}</span> {/* Limit the width of text */}
-                  </div>
+                            <div key={index} className="mb-1 hover:bg-gray-100 p-2 rounded-md transition-transform duration-300 hover:scale-105"> {/* Align items horizontally */}
+              <span className="w-3 h-3 bg-[#1B3855] rounded-full inline-block align-middle mr-2 hover:bg-[#0E74A4] transition duration-200"></span> {/* Circle dot indicator with hover */}
+              <span className="text-sm sm:text-base text-gray-700 inline align-middle hover:text-[#0E74A4] transition duration-200">{value}</span> {/* Item text with hover */}
+          </div>
+
                 ))}
               </div>
             </div>
