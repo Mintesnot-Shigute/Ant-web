@@ -77,7 +77,7 @@ function Navbar() {
         </div>
 
         {/* Hamburger menu visible on small screens */}
-        <div className="sm:hidden cursor-pointer" onClick={toggleMenu}>
+        <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
           <div className="hamburger">
             <span></span>
             <span></span>
@@ -86,7 +86,7 @@ function Navbar() {
         </div>
 
         {/* Navbar menu - hidden on small screens */}
-        <ul className={`flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 py-2 sm:flex transition-transform duration-300 ${menuActive ? 'flex' : 'hidden'} sm:space-x-4`}>
+        <ul className={`flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-4 py-2 lg:flex transition-transform duration-300 ${menuActive ? 'flex' : 'hidden'} lg:space-x-4`}>
           {/* Home */}
           <li className="relative">
             <Link to="/" className="nav-link mr-24" onClick={closeMenu}>Home</Link>

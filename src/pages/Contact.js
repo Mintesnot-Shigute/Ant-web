@@ -49,8 +49,8 @@ function Contact() {
         Monday — Saturday: 8:30 am – 5:30 pm
       </p>
 
-      {/* Contact Info Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center mb-12">
+    {/* Contact Info Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-12">
         {/* Email & Phone */}
         <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">EMAIL & PHONE</h2>
@@ -69,7 +69,7 @@ function Contact() {
         <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-transform">
           <h2 className="text-xl font-semibold mb-4">VISIT US</h2>
           <p className="block text-[#0E74A4] flex justify-center items-center">
-            Addis Ketema, Wereda :05, H.No:261/41, Near Addis Michael Church.
+            Addis Ketema, Wereda: 05, H.No: 261/41, Near Addis Michael Church.
           </p>
         </div>
 
